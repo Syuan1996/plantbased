@@ -1,0 +1,36 @@
+/* memberBanner start */
+
+.width550 {
+    max-width: 550px;
+    margin: 0 auto;
+
+
+}
+
+.memberBanner {
+    text-align: center;
+    width: 100%;
+    aspect-ratio: 1920 / 250;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../img/commom/member/woodPattern.png");
+    border-radius: 0 0 200px 200px;
+    margin-bottom: 5%;
+}
+
+.memberBanner h3 {
+    font-size: 30px;
+}
+
+.memberBanner h3::after {
+    content: '';
+    display: block;
+    width: 60%;
+    border-bottom: 1.5px solid black;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+/* memberBanner end */

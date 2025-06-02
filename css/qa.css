@@ -1,0 +1,97 @@
+body {
+    padding-top: 137px;
+}
+
+
+.qaWrap {
+    margin-bottom: 60px;
+}
+
+.qWrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 70px;
+    border: 1px solid #000;
+}
+
+.qopen {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+}
+
+.aclose {
+    width: 31.5px;
+    height: 31.5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 6px;
+}
+
+.qaWrapAll {
+    margin-bottom: 50px;
+}
+
+.QaWrapAll h3 {
+
+    font-size: 30px;
+    margin-bottom: 40px;
+    border-left: 4px solid #000;
+    padding-left: 10px;
+}
+
+.qWrap h4 {
+    line-height: 1.5;
+    padding: 15px 54px 15px 20px;
+    font-size: 24px;
+}
+
+
+.qWrap span {
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    align-self: stretch;
+    background-color: #FFB26C;
+    font-size: 30px;
+    flex-shrink: 0;
+}
+
+/* 開關設定start */
+
+.aWrap {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    font-size: 22px;
+    line-height: 1.5;
+    padding-left: 83px;
+    padding-top: 17px;
+    padding-right: 60px;
+}
+
+
+
+.qaWrap .aclose {
+    opacity: 0;
+
+
+}
+
+
+.qaWrap.open .qopen {
+
+    opacity: 0;
+}
+
+.qaWrap.open .aclose {
+
+    opacity: 1;
+}

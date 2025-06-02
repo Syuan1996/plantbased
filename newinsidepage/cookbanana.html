@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common/rest.css">
+    <link rel="stylesheet" href="../css/common/style.css">
+    <link rel="stylesheet" href="../css/news/newInsidePages.css">
+
+</head>
+
+<body>
+
+    <!-- 跑馬燈導覽列-banner-start -->
+    <div id="marqueeHeaderWrapper"></div>
+    <!-- 跑馬燈導覽列-banner-end -->
+
+    <section class="newsContentInside width1200">
+
+        <span class="newsContentInsideDate">2025 . 5 . 20</span>
+        <h2>香蕉果乾搭優格，簡單美味，滿滿能量一整天</h2>
+
+        <div class="newsContentInsidePic"><img src="../img/news/料理分享/2.香蕉果乾/2.香蕉果乾inside.jpeg" alt=""></div>
+
+        <p>香蕉果乾與優格的完美結合，既能提供豐富的營養，又能帶來極致的美味享受。這道輕食不僅適合作為早餐或點心，還能在忙碌的日常中給予你滿滿的能量，讓你從早到晚都能保持活力。今天就來分享這個簡單又健康的食譜，帶你輕鬆打造這道完美的香蕉優格組合。
+        </p>
+
+        <p> 首先，將香蕉果乾切成小片，這樣可以讓它更容易與優格混合。接著，挑選一款你喜愛的優格，無論是原味或是希臘式優格，都能與香蕉果乾相得益彰。將香蕉果乾片放入碗中，倒入一層濃郁的優格，再根據口味加點蜂蜜或是枸杞等配料，增添一點天然甜味與色彩。若你喜歡有嚼勁的口感，也可以加入一些堅果，如杏仁或核桃，讓整道料理的口感層次更加豐富。
+        </p>
+
+        <p>
+            這道香蕉果乾優格不僅美味，還充滿能量。香蕉果乾富含鉀、纖維和天然糖分，與優格中的益生菌搭配，能夠幫助消化，提升腸道健康。無論是當作早餐，還是午後的小點心，都能輕鬆滿足你的食慾，同時帶來滿滿的幸福感。</p>
+
+    </section>
+
+    <!-- footer-start -->
+    <div id="footerWrapper"></div>
+    <!-- footer-end -->
+
+    <script>
+        fetch('commonHtml/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('marqueeHeaderWrapper').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = '../js/common/menu.js';
+                document.body.appendChild(script);
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script>
+        fetch('commonHtml/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footerWrapper').innerHTML = data;
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+</body>
+
+</html>

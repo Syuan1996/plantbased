@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common/rest.css">
+    <link rel="stylesheet" href="../css/common/style.css">
+    <link rel="stylesheet" href="../css/news/newInsidePages.css">
+
+</head>
+
+<body>
+
+    <!-- 跑馬燈導覽列-banner-start -->
+    <div id="marqueeHeaderWrapper"></div>
+    <!-- 跑馬燈導覽列-banner-end -->
+
+    <section class="newsContentInside width1200">
+
+        <span class="newsContentInsideDate">2025 . 06 . 01</span>
+        <h2>秋葵乾搭配簡單食材，輕鬆打造創意風味餐</h2>
+
+        <div class="newsContentInsidePic"><img src="../img/news/料理分享/1.秋葵乾/1.秋葵乾inside.jpeg" alt=""></div>
+
+        <p>秋葵乾不僅能作為零食，還能輕鬆融入各種料理，今天要分享一個簡單又美味的秋葵乾食譜，讓這個食材在你的餐桌上展現不同風味。你只需要將秋葵乾搭配一些常見食材，就能輕鬆做出一道豐富的沙拉，既能滿足味蕾，又能讓餐點多一份層次感。
+        </p>
+
+        <p> 首先，將秋葵乾稍微浸泡在溫水中，幾分鐘後它會變得更加柔軟，這樣的口感適合搭配脆口的小黃瓜與多汁的番茄。你可以將這些食材切片後放入碗中，再淋上一些橄欖油和檸檬汁，輕輕拌勻，讓每一片食材都能充分吸收醬汁的風味。為了增添一點香氣，可以撒上一些迷迭香或是自己喜歡的香料，這樣整道菜的味道會更加豐富。
+        </p>
+
+        <p>
+            這道秋葵乾沙拉不僅是午餐的好選擇，也是派對上很受歡迎的小吃。秋葵乾的口感細膩，和新鮮蔬菜搭配後，會帶來一種微妙的嚼勁，讓你在每一口中都能品味到不同層次的口感。無論是搭配簡單的主食，還是單獨作為一個開胃小菜，它都能輕鬆滿足你的味蕾。
+            限時優惠，立即搶購！現在購買水蜜桃果乾，即享超值折扣：2件9折，3件85折，數量有限，售完為止，錯過等明年！</p>
+
+    </section>
+
+    <!-- footer-start -->
+    <div id="footerWrapper"></div>
+    <!-- footer-end -->
+
+    <script>
+        fetch('commonHtml/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('marqueeHeaderWrapper').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = '../js/common/menu.js';
+                document.body.appendChild(script);
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script>
+        fetch('commonHtml/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footerWrapper').innerHTML = data;
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+/*  mainMessageFormd-start*/
+.width910 {
+    max-width: 910px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.messageWrap {
+    padding: 0 15px;
+    margin-bottom: 90px;
+}
+
+form label {
+    font-size: 22px;
+}
+
+.messageWrap p {
+    text-align: center;
+    margin-bottom: 3.5%;
+    line-height: 1.5;
+
+
+}
+
+.messageForm {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.messageForm input,
+textarea {
+    background-color: #fef8e7;
+    border: 1px solid #000;
+}
+
+.messageGender input {
+    background-color: #fef8e7;
+}
+
+
+.messageField {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.messageField .star {
+    color: red;
+    padding-left: 3px;
+}
+
+.messageField input.writeContent {
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+
+.messageGenderWrap,
+.messageTopicWrap {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.messageGender {
+    display: flex;
+    gap: 10px;
+
+
+}
+
+.messageGender,
+.messageTopic {
+    display: flex;
+    gap: 10px;
+
+
+}
+
+.messageGender input,
+.messageTopic input {
+    width: 20px;
+    height: 20px;
+
+}
+
+.messageFieldGender,
+.messageFieldTopic {
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+
+.messageTextarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+.messageForm button {
+    font-size: 23px;
+    margin: 0 auto;
+    width: 30%;
+    min-width: 160px;
+    border: none;
+    padding: 15px 20px;
+    letter-spacing: 1.5px;
+    background-color: #F88400;
+    margin-top: 10px;
+
+}
+
+/*  mainMessageFormd-end*/

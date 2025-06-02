@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common/rest.css">
+    <link rel="stylesheet" href="../css/common/style.css">
+    <link rel="stylesheet" href="../css/product/productInsidePages.css">
+
+</head>
+
+<body>
+
+    <!-- 跑馬燈導覽列-banner-start -->
+    <div id="marqueeHeaderWrapper"></div>
+    <!-- 跑馬燈導覽列-banner-end -->
+
+    <section class="productInside boundarypdwrap">
+        <div class="productInside width1200">
+            <div class="productInsideTop">
+                <div class="productInsideTopLeft">
+
+                    <div class="productInsideTopLeftLargeItem">
+                        <img id="largeImage" src="" alt="">
+                    </div>
+
+                    <div id="smallImagePanel" class="productInsideTopLeftSmallItem">
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/12.香菇乾/香菇乾 (250g)small1.jpg" alt="">
+                        </div>
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/12.香菇乾/香菇乾 (250g)small2.jpg" alt="">
+                        </div>
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/12.香菇乾/香菇乾 (250g)small3.jpg" alt="">
+                        </div>
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/12.香菇乾/香菇乾 (250g)small4.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="productInsideTopRight">
+
+                    <h2> 香菇乾 (250g)</h2>
+
+                    <div class="underLineBall">
+                    </div>
+
+                    <div class="productInsideDes">
+
+                        <h3>山林香氣，在齒間靜靜蔓延</h3>
+
+                        <p>嚴選台灣高山香菇，經低溫烘乾後呈現濃郁菌菇香與自然Q韌口感，無添加、無油炸，是純粹又有層次的蔬食系風味。
+                        </p>
+
+                        <ul>
+                            <li>成分: 香菇、少許天然糖（依實際商品調整）</li>
+                            <li>保存方式: 避免陽光直射，請存放於陰涼乾燥處</li>
+                            <li>賞味期限: 6 個月（開封後請盡速食用完畢）</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="priceNum">
+                        <div class="price">價格<span class="Digits">220</span>元</div>
+
+                        <div class="num">
+                            <span class="buynum">購買數量</span>
+                            <div class="numControl">
+                                <span class="reduce"><img src="../img/product/productInside/reduce.svg" alt=""></span>
+                                <span class="nowNumber">1</span>
+                                <span class="add"><img src="../img/product/productInside/add.svg" alt=""></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="buyCart">
+                        <button class="buy">直接購買</button>
+                        <button class="cart">加入購物車</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 下方其他詳細介紹start -->
+            <div class="productInsideBottom">
+
+                <div class="productInsideBottomPic">
+                    <img src="../img/product/productInside/12.香菇乾/香菇乾 (250g)detail1.jpg" alt="">
+                </div>
+
+                <p>選用台灣高海拔地區栽培的厚實香菇，香氣濃郁、菌傘飽滿，透過低溫長時間烘製工藝，完整保留香菇天然的鮮味與菇類特有的Q韌口感。香菇乾入口後越嚼越香，散發出如森林般的深層氣息，適合當作純粹零嘴享用，也能加入料理提香、提升口感層次。無人工調味、無香料添加，每一口都是自然的堅持與土地的回饋，是懂吃人最愛的慢調系蔬食選擇。
+                </p>
+            </div>
+
+            <!-- 下方其他詳細介紹end -->
+        </div>
+    </section>
+
+    <!-- footer-start -->
+    <div id="footerWrapper"></div>
+    <!-- footer-end -->
+
+    <script>
+        fetch('commonHtml/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('marqueeHeaderWrapper').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = '../js/common/menu.js';
+                document.body.appendChild(script);
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script>
+        fetch('commonHtml/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footerWrapper').innerHTML = data;
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script src="../js/productInsidePages.js"></script>
+</body>
+
+</html>

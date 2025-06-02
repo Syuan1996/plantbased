@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common/rest.css">
+    <link rel="stylesheet" href="css/common/style.css">
+
+    <link rel="stylesheet" href="css/common/memberBanner.css">
+    <link rel="stylesheet" href="css/member/memberLogin.css">
+</head>
+
+<body>
+    <!-- 跑馬燈導覽列-banner-start -->
+    <div id="marqueeHeaderWrapper"></div>
+    <!-- 跑馬燈導覽列-banner-end -->
+
+
+    <!-- 會員登入banner start -->
+    <section class="memberBanner width1920">
+        <h3>會員登入</h3>
+    </section>
+    <!-- 會員登入banner end -->
+
+    <main>
+        <section class="memberLoginWrap width1920">
+            <div class="memberLoginContent width550">
+                <form action="">
+                    <div>
+                        <label for="memberLoginEmail">電子郵件</label>
+                        <input type="email" name="memberLoginEmail" id="memberLoginEmail">
+                    </div>
+
+                    <div>
+                        <label for="memberLoginEmail">密碼</label>
+                        <input type="password" name="memberLoginPw" id="memberLoginPw">
+                        <p class="forgetPw"><a href="" #>忘記密碼?</a></p>
+                    </div>
+
+                    <button type="submit">登入</button>
+                    <p class="register"><a href="memberRegister.html">註冊新會員</a></p>
+
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- footer-start -->
+    <div id="footerWrapper"></div>
+    <!-- footer-end -->
+
+    <script>
+        fetch('commonHtml/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('marqueeHeaderWrapper').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = 'js/common/menu.js';
+                document.body.appendChild(script);
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script>
+        fetch('commonHtml/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footerWrapper').innerHTML = data;
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+</body>
+
+</html>

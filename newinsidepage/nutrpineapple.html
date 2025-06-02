@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common/rest.css">
+    <link rel="stylesheet" href="../css/common/style.css">
+    <link rel="stylesheet" href="../css/news/newInsidePages.css">
+
+</head>
+
+<body>
+
+    <!-- 跑馬燈導覽列-banner-start -->
+    <div id="marqueeHeaderWrapper"></div>
+    <!-- 跑馬燈導覽列-banner-end -->
+
+    <section class="newsContentInside width1200">
+
+        <span class="newsContentInsideDate">2025 . 3 . 15</span>
+        <h2>鳳梨果乾，酸甜美味的營養能量包</h2>
+
+        <div class="newsContentInsidePic"><img src="../img/news/營養資訊/3.鳳梨果乾/2.鳳梨果乾inside.jpg" alt=""></div>
+
+        <p>鳳梨果乾以其天然的酸甜味和濃郁的果香，成為許多人喜愛的小吃選擇。除了口感清爽，它還是充滿營養的健康零食。今天我們來探討一下鳳梨果乾的營養成分，看看它為你的飲食帶來了哪些健康好處。
+        </p>
+
+        <p> 首先，鳳梨果乾富含維生素C，是一種強效的抗氧化劑。維生素C有助於增強免疫系統，促進膠原蛋白的合成，對皮膚健康、骨骼發展以及防止感染等方面都至關重要。每天適量食用鳳梨果乾，不僅能提升免疫力，還能幫助減少自由基對細胞的損害，延緩衰老過程。
+        </p>
+
+        <p>此外，鳳梨果乾還富含膳食纖維，有助於促進腸道健康，改善消化系統的運作。膳食纖維能有效預防便秘，促進食物的消化吸收，並有助於控制血糖和膽固醇水平，對維持整體健康非常有益。</p>
+
+    </section>
+
+    <!-- footer-start -->
+    <div id="footerWrapper"></div>
+    <!-- footer-end -->
+
+    <script>
+        fetch('commonHtml/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('marqueeHeaderWrapper').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = '../js/common/menu.js';
+                document.body.appendChild(script);
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script>
+        fetch('commonHtml/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footerWrapper').innerHTML = data;
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common/rest.css">
+    <link rel="stylesheet" href="../css/common/style.css">
+    <link rel="stylesheet" href="../css/product/productInsidePages.css">
+
+</head>
+
+<body>
+
+    <!-- 跑馬燈導覽列-banner-start -->
+    <div id="marqueeHeaderWrapper"></div>
+    <!-- 跑馬燈導覽列-banner-end -->
+
+    <section class="productInside boundarypdwrap">
+        <div class="productInside width1200">
+            <div class="productInsideTop">
+                <div class="productInsideTopLeft">
+
+                    <div class="productInsideTopLeftLargeItem">
+                        <img id="largeImage" src="" alt="">
+                    </div>
+
+                    <div id="smallImagePanel" class="productInsideTopLeftSmallItem">
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/9.蕃茄果乾/蕃茄果乾 (250g)small1.jpg" alt="">
+                        </div>
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/9.蕃茄果乾/蕃茄果乾 (250g)small2.jpeg" alt="">
+                        </div>
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/9.蕃茄果乾/蕃茄果乾 (250g)small3.jpeg" alt="">
+                        </div>
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/9.蕃茄果乾/蕃茄果乾 (250g)small4.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="productInsideTopRight">
+
+                    <h2>蕃茄果乾 (250g)</h2>
+
+                    <div class="underLineBall">
+                    </div>
+
+                    <div class="productInsideDes">
+
+                        <h3>果香酸甜，在舌尖綻放初夏的微光</h3>
+
+                        <p>嚴選台灣當季鮮採小蕃茄，低溫慢烘濃縮果實酸甜風味，保留天然色澤與細膩果香。酸中帶甜，層次豐富，是最能喚醒味蕾的果乾選擇。
+                        </p>
+
+                        <ul>
+                            <li>成分: 蕃茄果肉、少許天然糖（依實際商品調整）</li>
+                            <li>保存方式: 避免陽光直射，請存放於陰涼乾燥處</li>
+                            <li>賞味期限: 6 個月（開封後請盡速食用完畢）</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="priceNum">
+                        <div class="price">價格<span class="Digits">200</span>元</div>
+
+                        <div class="num">
+                            <span class="buynum">購買數量</span>
+                            <div class="numControl">
+                                <span class="reduce"><img src="../img/product/productInside/reduce.svg" alt=""></span>
+                                <span class="nowNumber">1</span>
+                                <span class="add"><img src="../img/product/productInside/add.svg" alt=""></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="buyCart">
+                        <button class="buy">直接購買</button>
+                        <button class="cart">加入購物車</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 下方其他詳細介紹start -->
+            <div class="productInsideBottom">
+
+                <div class="productInsideBottomPic">
+                    <img src="../img/product/productInside/9.蕃茄果乾/蕃茄果乾 (250g)detail1.jpeg" alt="">
+                </div>
+
+                <p>選用日照充足、自然熟成的台灣小蕃茄，於成熟飽滿時採摘，經過低溫長時間烘製，濃縮果肉精華與蕃茄原有的酸甜層次。果乾外表透亮、香氣自然，入口微酸後轉為果實本身的柔甜，回味清新不膩。無添加香料與人工色素，保留蕃茄最純粹的風味與口感，是午後想醒醒腦或佐茶的自然系零嘴，吃得出蔬果的簡單純真。
+                </p>
+            </div>
+
+            <!-- 下方其他詳細介紹end -->
+        </div>
+    </section>
+
+    <!-- footer-start -->
+    <div id="footerWrapper"></div>
+    <!-- footer-end -->
+
+    <script>
+        fetch('commonHtml/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('marqueeHeaderWrapper').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = '../js/common/menu.js';
+                document.body.appendChild(script);
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script>
+        fetch('commonHtml/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footerWrapper').innerHTML = data;
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script src="../js/productInsidePages.js"></script>
+</body>
+
+</html>

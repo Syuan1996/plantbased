@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common/rest.css">
+    <link rel="stylesheet" href="../css/common/style.css">
+    <link rel="stylesheet" href="../css/news/newInsidePages.css">
+
+</head>
+
+<body>
+
+    <!-- 跑馬燈導覽列-banner-start -->
+    <div id="marqueeHeaderWrapper"></div>
+    <!-- 跑馬燈導覽列-banner-end -->
+
+    <section class="newsContentInside width1200">
+
+        <span class="newsContentInsideDate">2025 . 3 . 22</span>
+        <h2>香菇乾，天然的健康寶庫</h2>
+
+        <div class="newsContentInsidePic"><img src="../img/news/營養資訊/2.香菇乾/2.香菇乾inside.jpeg" alt=""></div>
+
+        <p>香菇乾是一款營養豐富、風味獨特的乾貨，它不僅能提升料理的味道，還擁有多種對健康有益的營養成分。今天，我們來深入了解香菇乾的營養價值，讓你在享受美味的同時，也能輕鬆攝取到許多身體所需的營養。
+        </p>
+
+        <p> 香菇乾富含多種人體所需的營養素，特別是蛋白質、膳食纖維、維生素D以及各類礦物質，如鉀、鈣、磷等。香菇乾中的天然多糖體，尤其是香菇多糖，對於增強免疫系統功能非常有幫助，能有效提升身體對抗病菌的能力。
+        </p>
+
+        <p>此外，香菇乾還含有豐富的植物化學成分，如香菇酸，這些成分對於抗氧化、抗炎症有很好的效果。經常食用香菇乾有助於減少自由基的傷害，保護細胞健康，對抗衰老過程。</p>
+
+    </section>
+
+    <!-- footer-start -->
+    <div id="footerWrapper"></div>
+    <!-- footer-end -->
+
+    <script>
+        fetch('commonHtml/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('marqueeHeaderWrapper').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = '../js/common/menu.js';
+                document.body.appendChild(script);
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script>
+        fetch('commonHtml/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footerWrapper').innerHTML = data;
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+</body>
+
+</html>

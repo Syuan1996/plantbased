@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common/rest.css">
+    <link rel="stylesheet" href="css/common/style.css">
+
+    <link rel="stylesheet" href="css/common/memberBanner.css">
+
+    <link rel="stylesheet" href="css/member/memberRegister.css">
+</head>
+
+<body>
+    <!-- 跑馬燈導覽列-banner-start -->
+    <div id="marqueeHeaderWrapper"></div>
+    <!-- 跑馬燈導覽列-banner-end -->
+
+
+    <!-- 會員註冊banner start -->
+    <section class="memberBanner width1920">
+        <h3>會員註冊</h3>
+    </section>
+    <!-- 會員註冊banner end -->
+
+    <main>
+        <section class="memberRegisterWrap width1920">
+
+            <div class="memberRegisterContent width550">
+                <form action="">
+
+                    <div class="registerWholeName">
+                        <div class="firstName">
+                            <label for="firstName">姓</label>
+                            <input type="text" id="firstName">
+                        </div>
+
+                        <div class="lastName">
+                            <label for="lastName">名</label>
+                            <input type="text" id="lastName">
+                        </div>
+                    </div>
+
+
+                    <div class="registerGender">
+                        <p>性別</p>
+
+                        <div class="registerGenderWrap">
+                            <div>
+                                <input type="radio" id="registerGirl" name="registerGender">
+                                <label for="registerGirl">女生</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="registerBoy" name="registerGender">
+                                <label for="registerBoy">男生</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="birthDate">
+                        <label for="birthDate">出生日期</label>
+                        <input type="date" id="birthDate">
+                    </div>
+
+                    <div class="registerPhone">
+                        <label for="registerPhone">電話</label>
+                        <input type="tel" name="registerPhone" id="registerPhone">
+                    </div>
+
+                    <div class="registerEmail">
+                        <label for="registerEmail">電子郵件</label>
+                        <input type="email" name="registerEmail" id="registerEmail">
+                    </div>
+
+                    <div class="registerPassword">
+                        <label for="registerPassword">密碼</label>
+                        <input type="text" id="registerPassword">
+                    </div>
+
+                    <div class="registerPasswordConfirm">
+                        <label for="registerPasswordConfirm">確認密碼</label>
+                        <input type="text" id="registerPasswordConfirm">
+                    </div>
+
+                    <div class="Subscribeletter">
+                        <input type="checkbox" name="" id="">
+                        <label for="">訂閱電子報</label>
+                    </div>
+
+                    <button type="submit">註冊</button>
+                    <p class="login"><a href="#">已是會員者請到這登入</a></p>
+
+                </form>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <!-- footer-start -->
+    <div id="footerWrapper"></div>
+    <!-- footer-end -->
+
+    <script>
+        fetch('commonHtml/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('marqueeHeaderWrapper').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = 'js/common/menu.js';
+                document.body.appendChild(script);
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script>
+        fetch('commonHtml/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footerWrapper').innerHTML = data;
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+</body>
+
+</html>

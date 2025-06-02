@@ -1,0 +1,144 @@
+/* 產品頁-產品內容-類別選單-start */
+
+.productContent {
+    margin-bottom: 30px;
+}
+
+.productContentCatag {
+    margin-bottom: 200px;
+}
+
+.productContentCatag button {
+    margin-right: 15px;
+    font-size: 18px;
+    width: 95px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    color: #C57010;
+    background-color: white;
+    border: 1px solid #C57010;
+
+
+}
+
+
+
+.productContentCatag button.active {
+    color: white;
+    background-color: #C57010;
+}
+
+.productContentCatag {
+    margin-bottom: 64px;
+}
+
+@media (max-width:787px) {
+
+    .productContentCatag {
+        margin-bottom: 40px;
+    }
+
+    .productContentCatag button {
+        margin-right: 10px;
+        margin-bottom: 20px;
+
+    }
+
+
+}
+
+@media (max-width:375px) {
+
+    .productContentCatag {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .productContentCatag button {
+
+        margin-bottom: 20px;
+        font-size: 18px;
+
+
+    }
+}
+
+
+/* 產品頁-產品內容-類別選單-end */
+
+
+/* 產品頁-產品項目-start */
+
+.productContents {
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: calc(5.002% / 2);
+    row-gap: 50px;
+    margin-bottom: 50px;
+}
+
+.productContentItem {
+    width: 31.666%;
+
+}
+
+.productContentItem a {
+    text-decoration: none;
+}
+
+.productContentPic {
+    width: 100%;
+    aspect-ratio: 1 /1;
+    overflow: hidden;
+    margin-bottom: 12.8px;
+
+}
+
+.productContentPic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.productContentItem h3,
+.productContentItem p {
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.productContentItem h3 {
+    margin-bottom: 6px;
+}
+
+.productContentWrap {
+    padding: 0 20px;
+}
+
+
+@media (max-width:787px) {
+
+    .productContents {
+
+        column-gap: 4%;
+        row-gap: 25px;
+    }
+
+
+    .productContentItem {
+
+        width: calc(48%);
+    }
+}
+
+@media (max-width:375px) {
+    .productContentItem {
+        width: 100%;
+    }
+}
+
+
+/* 產品頁-產品項目-end */

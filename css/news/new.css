@@ -1,0 +1,173 @@
+.newsWrapper {
+    padding: 0 15px;
+}
+
+
+.newsContent {
+    display: flex;
+    gap: 2%;
+
+
+}
+
+.newsContentTag {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+}
+
+.newsContentItems {
+    width: 69%;
+
+}
+
+
+.newsContentItem {
+    display: flex;
+
+    width: 100%;
+    margin-bottom: 7%;
+}
+
+.newsContentItem.hidden {
+    display: none;
+}
+
+
+
+.newsCoverPic {
+    aspect-ratio: 340 / 250;
+    align-self: start;
+    width: 42%;
+
+    overflow: hidden;
+    background-color: #FFAFAF;
+}
+
+.newsCoverDes {
+    width: 58%;
+}
+
+.newsCoverDes h3 {
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.newsCoverPic img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.newsContentTag button {
+    font-size: 18px;
+    width: 85px;
+    height: 28px;
+    white-space: nowrap;
+}
+
+.newsContentTag button {
+    border: none;
+    margin-bottom: 6px;
+    padding-bottom: 2px;
+}
+
+.newsContentTag button:not(:first-child) {
+    border-bottom: 1.5px solid #E04242;
+    background-color: white;
+
+}
+
+.newsContentTag button:first-child {
+    background-color: #fed6d6;
+    color: rgb(0, 0, 0);
+}
+
+.newsContentTag button.active {
+    background-color: #E04242;
+    color: white;
+    border-bottom: none;
+}
+
+/* 最新消息文字內容大小細節調整start */
+.newsSmallTag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.PromotionTag {
+    text-align: center;
+    width: 80px;
+    line-height: 26px;
+    height: 26px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.newsCoverDes {
+    padding-left: 3.5%;
+}
+
+
+.newsCoverDes h3 {
+    font-size: 20px;
+    margin-bottom: 2.5%;
+}
+
+.newsCoverDes p {
+    font-size: 18px;
+    margin-bottom: 5%;
+    line-height: 1.5;
+
+}
+
+
+.newsCoverDes .detailButton a {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    width: 95px;
+    height: 30px;
+    line-height: 28px;
+    background-color: #FFAFAF;
+    margin-left: auto;
+
+}
+
+
+/* 最新消息文字內容大小細節調整end */
+
+/* 最新消息-頁尾區塊start */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+
+}
+
+.pagination span {
+    font-weight: 600;
+    color: #C40505;
+    min-width: 28px;
+    padding: 0 5px;
+    height: 28px;
+    border: 1px solid #C40505;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination .active {
+    background-color: #C40505;
+    color: white;
+}
+
+
+/* 最新消息-頁尾區塊end */

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common/rest.css">
+    <link rel="stylesheet" href="css/common/style.css">
+    <link rel="stylesheet" href="css/common/innerBanner.css">
+    <link rel="stylesheet" href="css/message.css">
+
+</head>
+
+<body>
+    <!-- 跑馬燈導覽列-banner-start -->
+    <div id="marqueeHeaderWrapper"></div>
+    <!-- 跑馬燈導覽列-banner-end -->
+
+
+    <!-- 線上留言-banner-start -->
+
+    <section class="innerBanner width1920">
+
+        <div class="bgBlock"></div>
+
+        <div class="innerBannerContent">
+            <div class="bannerBgImg"><img src="img/product/productBanner.jpg" alt=""></div>
+
+            <div class="innerBannerTitle">
+                <h2>線上留言</h2>
+                <p>message <span></span></p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- 線上留言-banner-end -->
+
+    <!-- 表單內容區-start -->
+
+    <main class="messageWrap width1920">
+        <p>有任何問題或建請填寫表單，請留意「 * 」為必填欄位。</p>
+
+        <div class="formWrap width910">
+            <form action="" class="messageForm">
+                <div class="messageField">
+                    <label for="messageName">姓名(可填寫暱稱)<span class="star">*</span></label>
+                    <input type="text" name="messageName" id="messageName" placeholder="請輸入您的姓名" class="writeContent">
+                </div>
+
+                <div class="messageField">
+                    <div class="messageFieldGender">性別</div>
+
+                    <div class="messageGenderWrap">
+                        <div class="messageGender">
+                            <input type="radio" name="messageGender" id="messageGenderGirl">
+                            <label for="messageGenderGirl">女生</label>
+                        </div>
+
+                        <div class="messageGender">
+                            <input type="radio" name="messageGender" id="messageGenderMale">
+                            <label for="messageGenderMale">男生</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="messageField">
+                    <label for="messagePhoneNum">手機號碼<span class="star">*</span></label>
+                    <input type="tel" name="messagePhoneNum" id="messagePhoneNum" placeholder="請輸入您的手機號碼"
+                        class="writeContent">
+                </div>
+
+                <div class="messageField">
+                    <label for="messagePhoneNum">電子郵件<span class="star">*</span></label>
+                    <input type="email" name="messagePhoneNum" id="messagePhoneNum" placeholder="請輸入您的電子郵件"
+                        class="writeContent">
+                </div>
+
+                <div class="messageField">
+                    <label for="messagePhoneNum">地址</label>
+                    <input type="email" name="messagePhoneNum" id="messagePhoneNum" placeholder="請輸入您的居住地址"
+                        class="writeContent">
+                </div>
+
+                <div class="messageField">
+                    <duv class="messageFieldTopic">詢問主題<span class="star">*</span></duv>
+
+                    <div class="messageTopicWrap">
+                        <div class="messageTopic">
+                            <input type="checkbox" name="messageTopic" id="messageTopicOrder">
+                            <label for="messageTopicOrder">訂購</label>
+                        </div>
+
+                        <div class="messageTopic">
+                            <input type="checkbox" name="messageTopic" id="messageTopicProduct">
+                            <label for="messageTopicProduct">產品</label>
+                        </div>
+
+                        <div class="messageTopic">
+                            <input type="checkbox" name="messageTopic" id="messageTopicLogin">
+                            <label for="messageTopicLogin">登入</label>
+                        </div>
+
+                        <div class="messageTopic">
+                            <input type="checkbox" name="messageTopic" id="messageTopicSign">
+                            <label for="messageTopicSign">註冊</label>
+                        </div>
+
+                        <div class="messageTopic">
+                            <input type="checkbox" name="messageTopic" id="messageTopicBind">
+                            <label for="messageTopicBind">合作</label>
+                        </div>
+
+                        <div class="messageTopic">
+                            <input type="checkbox" name="messageTopic" id="messageTopicOther">
+                            <label for="messageTopicOther">其他</label>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="messageField">
+                    <label for="messageTextarea">詢問內容</label>
+                    <textarea name="messageTextarea" id="messageTextarea" class="messageTextarea"></textarea>
+                </div>
+                <button type="submit">送出資料</button>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- 表單內容區-end -->
+
+    <!-- 頁尾輪播照片-start -->
+    <section></section>
+
+    <!-- 頁尾輪播照片-end -->
+
+    <!-- footer-start -->
+    <div id="footerWrapper"></div>
+    <!-- footer-end -->
+
+    <script>
+        fetch('commonHtml/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('marqueeHeaderWrapper').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = 'js/common/menu.js';
+                document.body.appendChild(script);
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script>
+        fetch('commonHtml/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footerWrapper').innerHTML = data;
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+</body>
+
+</html>

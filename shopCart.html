@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common/rest.css">
+    <link rel="stylesheet" href="css/common/style.css">
+    <link rel="stylesheet" href="css/shopCart.css">
+</head>
+
+<body>
+    <!-- 跑馬燈導覽列-banner-start -->
+    <div id="marqueeHeaderWrapper"></div>
+    <!-- 跑馬燈導覽列-banner-end -->
+
+    <main class="shopCartWrap width1920">
+        <section class="width1200">
+            <h3><img src="img/shopCart/shopCartIcon.svg" alt="">購物車</h3>
+            <div class="shopNav">
+                <span class="shopItemNameTag">商品名稱</span>
+                <span class="shopItemMoneyTag">金額</span>
+                <span class="shopItemNumberTag">數量</span>
+                <span class="shopItemSumTag">小計</span>
+            </div>
+            <ul class="shopItemList">
+                <li class="shopItem">
+                    <div class="shopItemPic">
+                        <img src="img/shopCart/水蜜桃果乾(250g).jpg" alt="">
+                    </div>
+                    <div class="shopItemNameDollar">
+                        <h2>水蜜桃果乾(250g)</h2>
+                        <span class="oneItemDollar">400元</span>
+                    </div>
+                    <div class="quantity">2</div>
+                    <span class="subTotal">800元</span>
+                    <div class="deleteItem"><button>刪除</button></div>
+                </li>
+
+                <li class="shopItem">
+                    <div class="shopItemPic">
+                        <img src="img/shopCart/秋葵乾(250g).jpg" alt="">
+                    </div>
+                    <div class="shopItemNameDollar">
+                        <h2>秋葵乾(250g)</h2>
+                        <span class="oneItemDollar">300元</span>
+                    </div>
+                    <div class="quantity">1</div>
+                    <span class="subTotal">300元</span>
+                    <div class="deleteItem"><button>刪除</button></div>
+                </li>
+
+                <li class="shopItem">
+                    <div class="shopItemPic">
+                        <img src="img/shopCart/鳳梨果乾(250g).jpg" alt="">
+                    </div>
+                    <div class="shopItemNameDollar">
+                        <h2>鳳梨果乾(250g)</h2>
+                        <span class="oneItemDollar">300元</span>
+                    </div>
+                    <div class="quantity">10</div>
+                    <span class="subTotal">3000元</span>
+                    <div class="deleteItem"><button>刪除</button></div>
+                </li>
+            </ul>
+        </section>
+        <section class="width1200 Shopform">
+            <form action="" method="post">
+                <div class="ShopformContent">
+                    <div class="leftBuyInfo">
+                        <div class="deliveryGroup">
+                            <h4>運送方式</h4>
+                            <div class="deliveryHome">
+                                <div class="deliveryOptionHS">
+                                    <input type="radio" name="deliveryOptionHS" value="homedelivery" id="homedelivery">
+                                    <label for="homedelivery">宅配</label>
+                                </div>
+                                <div class="homeAddress">
+                                    <label for="home-address">配送地址</label>
+                                    <input type="text" id="home-address" name="home-address" placeholder="請輸入地址">
+                                </div>
+
+                            </div>
+                            <div class="convenienceStoreALL">
+                                <div class="deliveryOptionHS">
+                                    <input type="radio" name="deliveryOptionHS" value="storedelivery">
+                                    <label for="">超商</label>
+                                </div>
+
+                                <div class="convenienceStore">
+                                    <div class="StoreOptionFS">
+                                        <div class="StoreOptionF">
+                                            <input type="radio" name="StoreOptionFE" value="familyStore">
+                                            <label for="">FamilyMart</label>
+                                        </div>
+                                        <div class="StoreOptionE">
+                                            <input type="radio" name="StoreOptionFE" value="ElevenStore">
+                                            <label for="">7-Eleven</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="StoreDetailChange">
+                                        <div class="StoreTopCol">
+                                            <label for="StoreTopCol">門市名稱</label>
+                                            <input type="text" name="StoreName" id="StoreTopCol">
+                                            <a href="#" class="chooseStore">選擇門市</a>
+                                        </div>
+                                        <div class="StoreBottomCol">
+                                            <label for="StoreAddress">門市地址</label>
+                                            <input type="text" name="StoreAddress" id="StoreAddress">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="invoice">
+                            <h4>發票類型</h4>
+                            <div class="invoiceWrap">
+                                <div class="invoiceType">
+                                    <input type="radio" id="phoneCarrier" name="invoiceType">
+                                    <label for="phoneCarrier">手機載具</label>
+                                </div>
+
+                                <div class="invoiceType">
+                                    <input type="radio" id="companyInvoice" name="invoiceType">
+                                    <label for="companyInvoice">公司發票</label>
+                                </div>
+
+                                <div class="invoiceType">
+                                    <input type="radio" id="phoneCarrier" name="invoiceType">
+                                    <label for="phoneCarrier">捐贈發票</label>
+                                </div>
+                            </div>
+                            <input type="text" class="invoiceWrite">
+                        </div>
+                        <div class="ShopRemark">
+                            <h4>備註事項</h4>
+                            <textarea>
+                            </textarea>
+                        </div>
+                    </div>
+
+                    <div class="rightBuyInfo">
+                        <div class="shopMoneys">
+                            <div class="sumsMoney"><span>商品總額:</span><span>4100元</span></div>
+                            <div class="deliverMoney"><span>運送費用:</span><span>0元</span> </div>
+                            <div class="AllMoney"><span>結帳金額:</span><span>4100元</span></div>
+                        </div>
+                        <div class="recipientInfo">
+                            <h4>收件人資料填寫</h4>
+                            <div class="recipientNameWrap">
+                                <label for="recipientName">姓名:</label>
+                                <input type="text" id="recipientName">
+                            </div>
+                            <div class="recipientPhoneWrap">
+                                <label for="recipientPhone">電話:</label>
+                                <input type="text" id="recipientPhone">
+                            </div>
+                            <div class="recipientEmailWrap">
+                                <label for="recipientEmail">信箱:</label>
+                                <input type="email" id="recipientEmail">
+                            </div>
+                        </div>
+
+                        <div class="PaymentMethod">
+                            <h4>付款方式</h4>
+
+                            <div class="PaymentMethodWrap">
+                                <div class="PaymentMethodItem">
+                                    <input type="radio" id="cashOnDelivery" name="PaymentMethod">
+                                    <label for="cashOnDelivery">貨到付款</label>
+                                </div>
+
+                                <div class="PaymentMethodItem">
+                                    <input type="radio" id="atmTransfer" name="PaymentMethod">
+                                    <label for="atmTransfer">轉帳</label>
+                                </div>
+
+                                <div class="PaymentMethodItem">
+                                    <input type="radio" id="creditCard" name="PaymentMethod">
+                                    <label for="creditCard">信用卡付款</label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="confirmCheckout">確認結帳</button>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- footer-start -->
+    <div id="footerWrapper"></div>
+    <!-- footer-end -->
+
+    <script>
+        fetch('commonHtml/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('marqueeHeaderWrapper').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = 'js/common/menu.js';
+                document.body.appendChild(script);
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script>
+        fetch('commonHtml/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footerWrapper').innerHTML = data;
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+</body>
+
+</html>

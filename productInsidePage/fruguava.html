@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common/rest.css">
+    <link rel="stylesheet" href="../css/common/style.css">
+    <link rel="stylesheet" href="../css/product/productInsidePages.css">
+
+</head>
+
+<body>
+
+    <!-- 跑馬燈導覽列-banner-start -->
+    <div id="marqueeHeaderWrapper"></div>
+    <!-- 跑馬燈導覽列-banner-end -->
+
+    <section class="productInside boundarypdwrap">
+        <div class="productInside width1200">
+            <div class="productInsideTop">
+                <div class="productInsideTopLeft">
+
+                    <div class="productInsideTopLeftLargeItem">
+                        <img id="largeImage" src="" alt="">
+                    </div>
+
+                    <div id="smallImagePanel" class="productInsideTopLeftSmallItem">
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/5.芭樂果乾/芭樂果乾 (250g)small1.jpg" alt="">
+                        </div>
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/5.芭樂果乾/芭樂果乾 (250g)small2.jpeg" alt="">
+                        </div>
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/5.芭樂果乾/芭樂果乾 (250g)small3.jpeg" alt="">
+                        </div>
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/5.芭樂果乾/芭樂果乾 (250g)small4.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="productInsideTopRight">
+
+                    <h2>芭樂果乾 (250g)</h2>
+
+                    <div class="underLineBall">
+                    </div>
+
+                    <div class="productInsideDes">
+
+                        <h3>清香果韻，鎖住一口口自然爽脆</h3>
+
+                        <p>嚴選台灣在地芭樂，低溫慢烘保留原果的脆爽纖維與淡雅果香。口感紮實、甜度清新，是午後嘴饞時最無負擔的果香選擇。
+                        </p>
+
+                        <ul>
+                            <li>成分: 芭樂果肉、少許天然糖（依實際商品調整）</li>
+                            <li>保存方式: 避免陽光直射，請存放於陰涼乾燥處</li>
+                            <li>賞味期限: 6 個月（開封後請盡速食用完畢）</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="priceNum">
+                        <div class="price">價格<span class="Digits">150</span>元</div>
+
+                        <div class="num">
+                            <span class="buynum">購買數量</span>
+                            <div class="numControl">
+                                <span class="reduce"><img src="../img/product/productInside/reduce.svg" alt=""></span>
+                                <span class="nowNumber">1</span>
+                                <span class="add"><img src="../img/product/productInside/add.svg" alt=""></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="buyCart">
+                        <button class="buy">直接購買</button>
+                        <button class="cart">加入購物車</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 下方其他詳細介紹start -->
+            <div class="productInsideBottom">
+
+                <div class="productInsideBottomPic">
+                    <img src="../img/product/productInside/5.芭樂果乾/芭樂果乾 (250g)small3.jpeg" alt="">
+                </div>
+
+                <p>選用台灣當季芭樂，以低溫烘製技術將果實中的水分慢慢釋出，保留原始纖維口感與自然淡香。每一口都吃得到芭樂獨特的清爽與微甜，細緻不膩、脆中帶韌，讓人越嚼越香。無糖、無香料，真材實料打造純粹果乾滋味，是想吃點什麼又不想太負擔時的完美選擇。
+                </p>
+            </div>
+
+            <!-- 下方其他詳細介紹end -->
+        </div>
+    </section>
+
+    <!-- footer-start -->
+    <div id="footerWrapper"></div>
+    <!-- footer-end -->
+
+    <script>
+        fetch('commonHtml/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('marqueeHeaderWrapper').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = '../js/common/menu.js';
+                document.body.appendChild(script);
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script>
+        fetch('commonHtml/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footerWrapper').innerHTML = data;
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script src="../js/productInsidePages.js"></script>
+</body>
+
+</html>

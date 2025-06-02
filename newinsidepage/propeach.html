@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common/rest.css">
+    <link rel="stylesheet" href="../css/common/style.css">
+    <link rel="stylesheet" href="../css/news/newInsidePages.css">
+
+</head>
+
+<body>
+
+    <!-- 跑馬燈導覽列-banner-start -->
+    <div id="marqueeHeaderWrapper"></div>
+    <!-- 跑馬燈導覽列-banner-end -->
+
+    <section class="newsContentInside width1200">
+
+        <span class="newsContentInsideDate">2025 . 06 . 01</span>
+        <h2>夏日甜蜜！水蜜桃果乾開賣，2件9折，3件85折</h2>
+
+        <div class="newsContentInsidePic"><img src="../img/news/促銷活動/2.水蜜桃果乾/2.水蜜桃果乾inside.jpeg" alt=""></div>
+
+        <p>來自台灣優質水蜜桃的果乾新選擇，現在正式在植感輕食官網上架！每一片水蜜桃果乾都經過精心挑選，採用獨特的低溫烘焙工藝，保留了水蜜桃的天然甜美與香氣，口感軟嫩，果味十足，無添加任何防腐劑與人工色素，是健康又美味的天然零食。
+        </p>
+
+        <p> 無論是當作茶點、搭配酸奶，還是單純享用，都能帶來滿滿的幸福感！水蜜桃富含維生素C與膳食纖維，有助於美容養顏，讓你輕鬆享受美味與健康雙重驚喜。</p>
+
+        <p>
+            限時優惠，立即搶購！現在購買水蜜桃果乾，即享超值折扣：2件9折，3件85折，數量有限，售完為止，錯過等明年！</p>
+
+    </section>
+
+    <!-- footer-start -->
+    <div id="footerWrapper"></div>
+    <!-- footer-end -->
+
+    <script>
+        fetch('commonHtml/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('marqueeHeaderWrapper').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = '../js/common/menu.js';
+                document.body.appendChild(script);
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script>
+        fetch('commonHtml/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footerWrapper').innerHTML = data;
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common/rest.css">
+    <link rel="stylesheet" href="../css/common/style.css">
+    <link rel="stylesheet" href="../css/news/newInsidePages.css">
+
+</head>
+
+<body>
+
+    <!-- 跑馬燈導覽列-banner-start -->
+    <div id="marqueeHeaderWrapper"></div>
+    <!-- 跑馬燈導覽列-banner-end -->
+
+    <section class="newsContentInside width1200">
+
+        <span class="newsContentInsideDate">2025 . 4 . 28</span>
+        <h2>草莓果乾搭冰淇淋，美味加分，夏日必試甜點</h2>
+
+        <div class="newsContentInsidePic"><img src="../img/news/料理分享/3.草莓果乾/2.草莓果乾inside.jpeg" alt=""></div>
+
+        <p>首先，選擇你喜愛的冰淇淋口味（香草、草莓或巧克力都能完美搭配），將其舀入碗中，形成漂亮的冰淇淋球。接著，取一些草莓果乾輕輕撕開，撒在冰淇淋表面，草莓果乾的香甜味道會與冰淇淋的冰涼口感完美融合。如果喜歡更濃郁的味道，可以再灑上一些巧克力碎片或堅果，讓這道甜點更加多層次。
+        </p>
+
+        <p> 首先，將香蕉果乾切成小片，這樣可以讓它更容易與優格混合。接著，挑選一款你喜愛的優格，無論是原味或是希臘式優格，都能與香蕉果乾相得益彰。將香蕉果乾片放入碗中，倒入一層濃郁的優格，再根據口味加點蜂蜜或是枸杞等配料，增添一點天然甜味與色彩。若你喜歡有嚼勁的口感，也可以加入一些堅果，如杏仁或核桃，讓整道料理的口感層次更加豐富。
+        </p>
+
+        <p>
+            這道草莓果乾冰淇淋不僅是味覺上的享受，視覺上也極具吸引力。草莓果乾的鮮紅色彩和冰淇淋的潔白或柔和色調對比強烈，讓這道甜點看起來既美觀又誘人。每一口都可以享受到草莓的酸甜、冰淇淋的綿密以及脆口的果乾，簡單又不失精緻。
+        </p>
+
+    </section>
+
+    <!-- footer-start -->
+    <div id="footerWrapper"></div>
+    <!-- footer-end -->
+
+    <script>
+        fetch('commonHtml/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('marqueeHeaderWrapper').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = '../js/common/menu.js';
+                document.body.appendChild(script);
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script>
+        fetch('commonHtml/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footerWrapper').innerHTML = data;
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+</body>
+
+</html>

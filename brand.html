@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common/rest.css">
+    <link rel="stylesheet" href="css/common/style.css">
+    <link rel="stylesheet" href="css/common/innerBanner.css">
+
+    <link rel="stylesheet" href="css/brand.css">
+
+
+</head>
+
+<body>
+    <!-- 跑馬燈導覽列-banner-start -->
+    <div id="marqueeHeaderWrapper"></div>
+    <!-- 跑馬燈導覽列-banner-end -->
+
+    <!-- 品牌頁-banner-start -->
+
+    <section class="innerBanner width1920">
+
+        <div class="bgBlock"></div>
+
+        <div class="innerBannerContent">
+            <div class="bannerBgImg"><img src="img/brand/brandBanner.jpg" alt=""></div>
+
+            <div class="innerBannerTitle">
+                <h2>品牌介紹</h2>
+                <p>brand <span></span></p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- 品牌頁-banner-end -->
+
+    <!-- 品牌內容start -->
+
+    <main>
+        <section class="brandContent width1200">
+
+            <div class="brandContentDes">
+                <h3>輕鬆生活，營養均衡</h3>
+                <p>質感輕食，為忙碌的現代生活提供一種便利又健康的飲食模式。無需繁複準備，就能攝取多樣營養，讓你在緊湊節奏中，也能輕鬆照顧自己的身體與心情。不只是填飽肚子，更是為生活補充能量與品味，讓每一天的開始，都多一點從容與平衡。
+                </p>
+            </div>
+            <div class="brandContentDesImg1">
+                <img src="img/brand/blob/brandBlobTopRightImg.jpg" alt="">
+            </div>
+
+        </section>
+
+        <section class="brandContent width1200">
+
+            <div class="brandContentDes">
+                <h3>回歸自然，享受食光</h3>
+                <p>珍惜每一份來自土地的饋贈，用低溫烘焙的方式，緩慢鎖住蔬果的本質。在這樣的節奏裡，時間彷彿也慢了下來，讓你在每一次咀嚼中，都能感受到與自然的風味——這不是速食，而是一場與自己的對話。在片刻的靜謐中，找回生活的純粹與溫度。
+
+                </p>
+            </div>
+            <div class="brandContentDesimg2">
+                <img src="img/brand/blob/brandBlobBottomLeftImg.jpg" alt="">
+            </div>
+
+        </section>
+
+        <section class="brandIcons width1200">
+
+            <div class="brandIcon">
+                <div class="brandIconBg natureIcon">
+                    <img src="img/brand/icon/greenLeaf.svg" alt="">
+                </div>
+                <h4>嚴選天然</h4>
+                <p>使用當季新鮮蔬果，無添加人工香料，防腐劑，保留食材原味。</p>
+            </div>
+
+            <div class="brandIcon">
+                <div class="brandIconBg bakingIcon">
+                    <img src="img/brand/icon/pinkTemperature.svg" alt="">
+                </div>
+                <h4>低溫烘焙</h4>
+                <p>採用長時間的低溫烘焙技術，不經油炸，鎖住營養與自然風味。</p>
+            </div>
+
+            <div class="brandIcon">
+                <div class="brandIconBg localIcon">
+                    <img src="img/brand/icon/yellowGrass.svg" alt="">
+                </div>
+                <h4>在地製作</h4>
+                <p>採用長時間的低溫烘焙技術，不經油炸，鎖住營養與自然風味。</p>
+            </div>
+
+            <div class="brandIcon">
+                <div class="brandIconBg diverseIcon">
+                    <img src="img/brand/icon/OrangeSun.svg" alt="">
+                </div>
+                <h4>多元選擇</h4>
+                <p>提供多種水果乾與蔬菜乾，滿足不同日常食用需求，自由搭配。</p>
+            </div>
+
+        </section>
+
+        <section class="brandContentcollage width1200">
+
+            <div class="collage apple"><img src="img/brand/collage/1.apple.jpg" alt=""></div>
+            <div class="collage potato"><img src="img/brand/collage/2.potato.jpg" alt=""></div>
+            <div class="collage okra"><img src="img/brand/collage/3.Okra.jpg" alt=""></div>
+            <div class="collage peach"><img src="img/brand/collage/4.Peach.jpeg" alt=""></div>
+            <div class="collage dpg"><img src="img/brand/collage/5.Dragon、pumpkin、grapefruit.jpg" alt=""></div>
+            <div class="collage mushroom"><img src="img/brand/collage/6.mushroom.jpeg" alt=""></div>
+            <div class="collage redradish"><img src="img/brand/collage/7.redradish.jpg" alt=""></div>
+            <div class="collage banana"><img src="img/brand/collage/8.banana.jpg" alt=""></div>
+            <div class="collage smp"><img src="img/brand/collage/9.Strawberry、mushroom、pineapple.jpg" alt=""></div>
+            <div class="collage kiwi"><img src="img/brand/collage/10.kiwi.jpeg" alt=""></div>
+            <div class="collage oranges"><img src="img/brand/collage/11.orange.jpg" alt=""></div>
+            <div class="collage tomatos"><img src="img/brand/collage/12.tomato.jpg" alt=""></div>
+
+        </section>
+
+    </main>
+    <!-- 品牌內容end -->
+
+    <!-- footer-start -->
+    <div id="footerWrapper"></div>
+    <!-- footer-end -->
+
+    <script>
+        fetch('commonHtml/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('marqueeHeaderWrapper').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = 'js/common/menu.js';
+                document.body.appendChild(script);
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script>
+        fetch('commonHtml/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footerWrapper').innerHTML = data;
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+</body>
+
+</html>

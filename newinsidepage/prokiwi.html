@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common/rest.css">
+    <link rel="stylesheet" href="../css/common/style.css">
+    <link rel="stylesheet" href="../css/news/newInsidePages.css">
+
+</head>
+
+<body>
+
+    <!-- 跑馬燈導覽列-banner-start -->
+    <div id="marqueeHeaderWrapper"></div>
+    <!-- 跑馬燈導覽列-banner-end -->
+
+    <section class="newsContentInside width1200">
+
+        <span class="newsContentInsideDate">2025 . 06 . 03</span>
+        <h2>香甜登場！奇異果果乾正式開賣，2件9折</h2>
+
+        <div class="newsContentInsidePic"><img src="../img/news/促銷活動/1.奇異果果乾/2.奇異果果乾inside.jpg" alt=""></div>
+
+        <p>來自台灣鮮果的奇異果果乾，現在已正式上架於植感輕食官網！我們採用低溫烘焙技術，精心保留每一顆果實的原始果香與柔軟果肉，每一口都能享受自然的酸甜口感。奇異果果乾無添加任何防腐劑與人工色素，是您理想的健康零食選擇，輕鬆滿足味蕾的同時，也能照顧到身體的需求。
+        </p>
+
+        <p> 每包果乾都蘊藏著大自然的滋味，不論是當作日常零嘴，還是搭配下午茶，都是不容錯過的美味選擇！此外，我們的奇異果果乾更有豐富的膳食纖維，幫助消化，讓您在享受美味的同時，也能輕鬆保持健康。</p>
+
+        <p>
+            數量有限，搶購從速！現在購買奇異果果乾，即享有超值優惠：2件9折，3件85折！數量有限，售完為止，快來植感輕食官網，搶先體驗大自然的療癒力。</p>
+
+    </section>
+
+    <!-- footer-start -->
+    <div id="footerWrapper"></div>
+    <!-- footer-end -->
+
+    <script>
+        fetch('commonHtml/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('marqueeHeaderWrapper').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = '../js/common/menu.js';
+                document.body.appendChild(script);
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script>
+        fetch('commonHtml/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footerWrapper').innerHTML = data;
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+</body>
+
+</html>

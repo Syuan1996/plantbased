@@ -1,0 +1,267 @@
+main {
+    padding: 0 10px;
+}
+
+main section {
+    /* background-color: aqua; */
+
+}
+
+/* 1.brandContent 區塊start*/
+
+.brandContent {
+    display: flex;
+
+    gap: 8.333333%;
+
+}
+
+.brandContent:first-child {
+    margin-bottom: 40px;
+}
+
+.brandContent:nth-child(2) {
+    margin-bottom: 100px;
+}
+
+.brandContent:nth-child(2) .brandContentDes {
+    order: 1;
+}
+
+.brandContentDes {
+    padding-top: 8.333333%;
+    width: 37%;
+}
+
+.brandContentDes h3 {
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+
+.brandContentDes p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.brandContentDesImg1 {
+    width: calc((100% - 37% - 8.333333%));
+
+    aspect-ratio: 664 / 443;
+    mask-image: url("../img/brand/blob/brandBlobTopRight.svg");
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+}
+
+.brandContentDesimg2 {
+    width: calc((100% - 37% - 8.333333%));
+
+    aspect-ratio: 664 / 443;
+    mask-image: url("../img/brand/blob/brandBlobBottomLeft.svg");
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+}
+
+.brandContentDesImg1 img,
+.brandContentDesimg2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* 讓圖片填滿遮罩區域 */
+    vertical-align: middle;
+    /* 消除圖片下方空隙 */
+}
+
+/* 1.brandContent 區塊end*/
+
+/* 2.brandIcons 區塊start*/
+
+.brandIcons {
+    display: flex;
+    padding: 0 3%;
+    justify-content: space-between;
+    margin-bottom: 8%;
+
+}
+
+.brandIcon {
+    width: 18%;
+
+}
+
+.brandIconBg {
+    margin: 0 auto;
+
+    max-width: 150px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6.85%;
+}
+
+.brandIconBg img {
+    width: 50%;
+    vertical-align: bottom;
+}
+
+.brandIconBg.natureIcon {
+    background-color: #26AE23;
+}
+
+.brandIconBg.bakingIcon {
+    background-color: #E76FAF;
+}
+
+.brandIconBg.localIcon {
+    background-color: #F1C309;
+}
+
+.brandIconBg.diverseIcon {
+    background-color: #F27D2F;
+}
+
+
+.brandIcon:nth-child(2) img {
+    transform: translateX(10%);
+
+}
+
+.brandIcon:nth-child(3) img {
+    transform: translateX(3%);
+
+}
+
+.brandIcon:last-child img {
+    width: 58%;
+}
+
+
+
+.brandIcon h4 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 7.109004%;
+
+}
+
+.brandIcon h4::after {
+    content: '';
+    max-width: 121px;
+    padding-top: 2.5%;
+    margin: 0 auto;
+    display: block;
+    border-bottom: 2px solid #000;
+}
+
+.brandIcon:nth-child(1) h4::after {
+    border-bottom: 2px solid #26AE23;
+}
+
+.brandIcon:nth-child(2) h4::after {
+    border-bottom: 2px solid #E76FAF;
+}
+
+.brandIcon:nth-child(3) h4::after {
+    border-bottom: 2px solid #F1C309;
+}
+
+.brandIcon:nth-child(4) h4::after {
+    border-bottom: 2px solid #F27D2F;
+}
+
+.brandIcon p {
+    font-size: 18px;
+}
+
+
+/* 2.brandIcons 區塊end*/
+
+
+/* 3.brandContentcollage 區塊start*/
+
+.brandContentcollage {
+    aspect-ratio: 1200 / 461.2;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.7%;
+    row-gap: 4.423243%;
+    grid-template-rows: repeat(4, 21.682567%);
+
+    grid-template-areas:
+        "apple okra dpg redradish smp smp"
+        "potato okra dpg banana smp smp"
+        "peach peach dpg banana kiwi oranges"
+        "peach peach mushroom banana kiwi tomatos"
+
+    ;
+
+    margin-bottom: 100px;
+}
+
+.collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.apple {
+    grid-area: apple;
+}
+
+.potato {
+    grid-area: potato;
+}
+
+.okra {
+    grid-area: okra;
+}
+
+.peach {
+    grid-area: peach;
+}
+
+.dpg {
+    grid-area: dpg;
+}
+
+.mushroom {
+    grid-area: mushroom;
+}
+
+.redradish {
+
+    grid-area: redradish;
+}
+
+.banana {
+    grid-area: banana;
+}
+
+.smp {
+
+    grid-area: smp;
+}
+
+.kiwi {
+    grid-area: kiwi;
+}
+
+.oranges {
+    grid-area: oranges;
+}
+
+.tomatos {
+    grid-area: tomatos;
+}
+
+
+
+
+
+
+
+
+/* 3.brandContentcollage 區塊end*/

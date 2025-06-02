@@ -1,0 +1,129 @@
+/* 內頁-banner-start */
+body {
+    padding-top: 152px;
+}
+
+.innerBanner {
+    position: relative;
+    height: auto;
+
+}
+
+.innerBannerContent {
+
+    display: flex;
+    position: relative;
+
+    gap: 40px;
+
+    margin-bottom: 130px;
+
+}
+
+.bannerBgImg {
+    width: 78%;
+    aspect-ratio: 1500 / 406.5;
+    background-color: aqua;
+
+}
+
+.bannerBgImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+.bgBlock {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+
+    background-color: #FFECC2;
+}
+
+.innerBannerTitle {
+    margin-top: 9%;
+
+}
+
+.innerBannerTitle h2 {
+    font-size: 40px;
+}
+
+.innerBannerTitle p {
+    font-size: 31px;
+}
+
+.innerBannerTitle span {
+    display: inline-block;
+    width: 70px;
+    border-bottom: 1px dashed #000;
+    margin-left: 5px;
+}
+
+
+
+
+@media (max-width: 1100px) {
+
+    .bannerBgImg {
+        width: 73%;
+    }
+
+    .innerBannerTitle {
+        margin-top: 8%;
+
+    }
+
+    .innerBannerTitle h2 {
+        font-size: 36px;
+    }
+
+    .innerBannerTitle p {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 767px) {
+
+
+    .innerBannerContent {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .bgBlock {
+        width: 100%;
+        height: 200px;
+        position: relative;
+        top: 0px;
+        left: 0;
+
+        background-color: #FFECC2;
+    }
+
+
+    .bannerBgImg {
+        display: none;
+    }
+
+    .innerBannerTitle {
+        margin-top: -127px;
+    }
+
+    .innerBannerTitle h2 {
+        font-size: 33px;
+    }
+
+    .innerBannerTitle p {
+        font-size: 23px;
+    }
+}
+
+
+/* 內頁-banner-end */

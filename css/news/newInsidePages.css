@@ -1,0 +1,32 @@
+.newsContentInside {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.newsContentInsidePic {
+    width: 91.667%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.newsContentInsideDate {
+    font-size: 20px;
+    color: #A00101;
+    display: block;
+    margin-bottom: 17px;
+}
+
+.newsContentInside h2 {
+    font-size: 30px;
+    padding-bottom: 17px;
+    border-bottom: 2px solid #A00101;
+    margin-bottom: 30px;
+}
+
+.newsContentInside p {
+    width: 91.667%;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}

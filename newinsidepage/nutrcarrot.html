@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common/rest.css">
+    <link rel="stylesheet" href="../css/common/style.css">
+    <link rel="stylesheet" href="../css/news/newInsidePages.css">
+
+</head>
+
+<body>
+
+    <!-- 跑馬燈導覽列-banner-start -->
+    <div id="marqueeHeaderWrapper"></div>
+    <!-- 跑馬燈導覽列-banner-end -->
+
+    <section class="newsContentInside width1200">
+
+        <span class="newsContentInsideDate">2025 . 3 . 22</span>
+        <h2>紅蘿蔔乾，超級食物的乾燥版</h2>
+
+        <div class="newsContentInsidePic"><img src="../img/news/營養資訊/1.紅蘿蔔乾/2.紅蘿蔔乾inside.jpeg" alt=""></div>
+
+        <p>紅蘿蔔乾是將新鮮紅蘿蔔經過低溫烘乾製作而成的健康零食，不僅保留了紅蘿蔔的營養成分，還擁有方便攜帶、不易變質的特點。今天就來深入了解這款營養豐富的乾果，看看它有哪些值得關注的營養價值。
+        </p>
+
+        <p> 紅蘿蔔乾富含豐富的β-胡蘿蔔素，這是維生素A的前驅物，對維持視力、促進免疫系統功能和皮膚健康非常有幫助。它還含有大量的膳食纖維，對腸道健康具有良好的支持作用，有助於消化與排便。紅蘿蔔乾中的鉀、鈣、鎂等礦物質，也有助於維持體內電解質的平衡，對心臟健康與骨骼健康都起著積極的作用。
+        </p>
+
+        <p>
+            此外，紅蘿蔔乾的低脂肪、低卡路里特性使它成為減重和保持體型的理想選擇。它不僅能夠提供滿滿的營養，還能讓你在享受美味的同時，輕鬆控制熱量攝取。紅蘿蔔乾的鮮甜口感也能替代高糖分的小吃，是理想的健康零食。</p>
+
+    </section>
+
+    <!-- footer-start -->
+    <div id="footerWrapper"></div>
+    <!-- footer-end -->
+
+    <script>
+        fetch('commonHtml/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('marqueeHeaderWrapper').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = '../js/common/menu.js';
+                document.body.appendChild(script);
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script>
+        fetch('commonHtml/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footerWrapper').innerHTML = data;
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common/rest.css">
+    <link rel="stylesheet" href="../css/common/style.css">
+    <link rel="stylesheet" href="../css/product/productInsidePages.css">
+
+</head>
+
+<body>
+
+    <!-- 跑馬燈導覽列-banner-start -->
+    <div id="marqueeHeaderWrapper"></div>
+    <!-- 跑馬燈導覽列-banner-end -->
+
+    <section class="productInside boundarypdwrap">
+        <div class="productInside width1200">
+            <div class="productInsideTop">
+                <div class="productInsideTopLeft">
+
+                    <div class="productInsideTopLeftLargeItem">
+                        <img id="largeImage" src="" alt="">
+                    </div>
+
+                    <div id="smallImagePanel" class="productInsideTopLeftSmallItem">
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/11.紅蘿蔔乾/紅蘿蔔乾 (250g)small1.jpg" alt="">
+                        </div>
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/11.紅蘿蔔乾/紅蘿蔔乾 (250g)small2.jpeg" alt="">
+                        </div>
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/11.紅蘿蔔乾/紅蘿蔔乾 (250g)small3.jpeg" alt="">
+                        </div>
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/11.紅蘿蔔乾/紅蘿蔔乾 (250g)small4.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="productInsideTopRight">
+
+                    <h2> 紅蘿蔔乾 (250g)</h2>
+
+                    <div class="underLineBall">
+                    </div>
+
+                    <div class="productInsideDes">
+
+                        <h3>橙色溫柔，咬出生活的小確幸</h3>
+
+                        <p>精選台灣鮮採紅蘿蔔，低溫慢烘濃縮自然甘甜與清香，片片金橘通透，脆口爽口，是兼具營養與風味的蔬食系果乾。
+                        </p>
+
+                        <ul>
+                            <li>成分: 紅蘿蔔、少許天然糖（依實際商品調整）</li>
+                            <li>保存方式: 避免陽光直射，請存放於陰涼乾燥處</li>
+                            <li>賞味期限: 6 個月（開封後請盡速食用完畢）</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="priceNum">
+                        <div class="price">價格<span class="Digits">150</span>元</div>
+
+                        <div class="num">
+                            <span class="buynum">購買數量</span>
+                            <div class="numControl">
+                                <span class="reduce"><img src="../img/product/productInside/reduce.svg" alt=""></span>
+                                <span class="nowNumber">1</span>
+                                <span class="add"><img src="../img/product/productInside/add.svg" alt=""></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="buyCart">
+                        <button class="buy">直接購買</button>
+                        <button class="cart">加入購物車</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 下方其他詳細介紹start -->
+            <div class="productInsideBottom">
+
+                <div class="productInsideBottomPic">
+                    <img src="../img/product/productInside/11.紅蘿蔔乾/紅蘿蔔乾 (250g)small4.jpeg" alt="">
+                </div>
+
+                <p>選用台灣在地栽種的紅蘿蔔，於鮮採當日處理，經低溫長時間烘乾，保留蔬菜天然的甜味與膳食纖維。乾燥後的紅蘿蔔色澤明亮、香氣淡雅，口感爽脆中透著自然回甘，不油炸、不添加香料或糖分，是純粹呈現蔬菜本質的健康零嘴。無論是下午嘴饞、運動後補能，或是搭配優格、沙拉、穀物早餐，都能為你的日常增添一份橙色的溫柔元氣。
+                </p>
+            </div>
+
+            <!-- 下方其他詳細介紹end -->
+        </div>
+    </section>
+
+    <!-- footer-start -->
+    <div id="footerWrapper"></div>
+    <!-- footer-end -->
+
+    <script>
+        fetch('commonHtml/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('marqueeHeaderWrapper').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = '../js/common/menu.js';
+                document.body.appendChild(script);
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script>
+        fetch('commonHtml/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footerWrapper').innerHTML = data;
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script src="../js/productInsidePages.js"></script>
+</body>
+
+</html>

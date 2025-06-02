@@ -1,0 +1,424 @@
+.shopCartWrap {
+    margin-top: 60px;
+    padding: 0 15px;
+}
+
+.shopCartWrap h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.shopCartWrap h3 img {
+    padding-right: 12px;
+}
+
+/* shopNav類別 start */
+
+.shopNav {
+    display: flex;
+    background-color: #FEEDA6;
+    margin-bottom: 35px;
+
+}
+
+.shopNav span {
+    display: inline-block;
+    font-size: 26px;
+    padding: 20px 0;
+
+}
+
+
+.shopNav .shopItemNameTag {
+    width: 43.333333%;
+
+    text-align: right;
+    padding-right: 8%;
+
+}
+
+.shopItemMoneyTag {
+    width: 12.5%;
+
+    text-align: center;
+}
+
+.shopItemNumberTag {
+    width: 20%;
+    text-align: center;
+
+}
+
+.shopItemSumTag {
+    width: 15.833333%;
+    text-align: center;
+
+}
+
+/* shopNav類別 end */
+
+/* shopItemList類別 start */
+
+.shopItemPic {
+    width: 17.9167%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.shopItemPic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.shopItemList .shopItem {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #000;
+    margin-bottom: 35px;
+}
+
+.shopItemNameDollar {
+    width: 37.916666%;
+
+    display: flex;
+}
+
+.shopItem h2 {
+    font-size: 25px;
+    width: 66.5%;
+    padding-left: 3.7%;
+    padding-right: 3.7%;
+
+}
+
+.oneItemDollar {
+    text-align: center;
+    font-size: 25px;
+    width: 33.5%;
+
+}
+
+.quantity {
+    font-size: 25px;
+    width: 20%;
+    text-align: center;
+
+}
+
+.subTotal {
+    font-size: 25px;
+    width: 15.833333%;
+    text-align: center;
+
+}
+
+.deleteItem {
+    text-align: right;
+    width: calc(100% - 91.666699%);
+}
+
+.deleteItem button {
+    width: 75%;
+    font-size: 20px;
+    border: none;
+    padding: 3px 4px;
+}
+
+/* shopItemList類別 end */
+
+.Shopform {
+    margin-top: -35px;
+}
+
+/* deliveryGroup 運送資訊start */
+.ShopformContent h4 {
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.ShopformContent h4::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: #fcc87e;
+    margin-top: -9px;
+}
+
+.ShopformContent {
+    display: flex;
+}
+
+
+.shopCartWrap form input {
+
+    min-height: 35px;
+    font-size: 21px;
+    padding-left: 10px;
+}
+
+.shopCartWrap form input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+.ShopformContent {
+    background-color: #fef5cf;
+    padding: 30px 10px 10px 10px;
+    margin-bottom: 40px;
+}
+
+/* leftBuyInfo start */
+.leftBuyInfo {
+    padding-right: 20px;
+    width: 60%;
+
+    border-right: 1px dashed black;
+
+}
+
+.deliveryHome {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.deliveryOptionHS {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 80px;
+
+}
+
+.deliveryOptionHS label {
+    font-size: 22px;
+}
+
+.homeAddress {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-grow: 1;
+}
+
+.homeAddress label {
+    font-size: 20px;
+    width: 18%;
+    min-width: 90px;
+
+}
+
+.homeAddress input {
+    width: 100%;
+}
+
+/* 超商運送start */
+.convenienceStore {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    gap: 15px;
+}
+
+.StoreOptionFS {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.StoreOptionF,
+.StoreOptionE {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.StoreOptionFS label {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+.convenienceStore .StoreOptionFS input[type="radio"] {
+    width: 18px;
+    height: 18px;
+}
+
+.StoreDetailChange {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.StoreDetailChange label {
+    font-size: 19px;
+}
+
+.StoreTopCol input {
+    width: 40%;
+}
+
+.StoreBottomCol {
+    display: flex;
+    align-items: center;
+
+}
+
+.StoreBottomCol input {
+    width: 100%;
+}
+
+.StoreBottomCol label {
+    min-width: 90px;
+}
+
+.StoreTopCol {
+    display: flex;
+    align-items: center;
+
+}
+
+.StoreTopCol label {
+    min-width: 90px;
+}
+
+.StoreDetailChange a {
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 3%;
+    padding: 10px;
+    background-color: rgb(192, 192, 192);
+    color: rgb(0, 0, 0);
+}
+
+.deliveryGroup {
+    margin-bottom: 30px;
+}
+
+/* 超商運送end */
+
+/* 發票類型start */
+
+.invoice {
+    margin-bottom: 20px;
+}
+
+.invoiceWrap {
+    display: flex;
+    gap: 2%;
+    margin-bottom: 10px;
+}
+
+.invoiceType {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.invoiceType label {
+    font-size: 20px;
+}
+
+.invoiceWrite {
+    width: 62%;
+}
+
+/* 發票類型end */
+
+/* 備註事項start */
+
+.ShopRemark textarea {
+    display: block;
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* 備註事項end */
+
+/* deliveryGroup 運送資訊end */
+
+/* leftBuyInfo end */
+
+/* rightBuyInfo Start */
+.rightBuyInfo {
+    padding-left: 20px;
+}
+
+.rightBuyInfo {
+    font-size: 24px;
+}
+
+.shopMoneys {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.AllMoney {
+    font-size: 26px;
+}
+
+.sumsMoney,
+.deliverMoney,
+.AllMoney {
+    display: flex;
+    gap: 5px;
+}
+
+/* rightBuyInfo End */
+
+/* recipientNameWrap start*/
+
+.recipientNameWrap,
+.recipientPhoneWrap {
+    margin-bottom: 15px;
+}
+
+
+.recipientEmailWrap {
+    margin-bottom: 25px;
+}
+
+/* recipientNameWrap end*/
+
+/* PaymentMethod-Start */
+.PaymentMethodWrap {
+    display: flex;
+    gap: 15px;
+}
+
+.PaymentMethodItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* PaymentMethod-end */
+
+
+.confirmCheckout {
+    display: block;
+    font-size: 30px;
+    border: none;
+    background-color: orange;
+    padding: 13px 60px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}

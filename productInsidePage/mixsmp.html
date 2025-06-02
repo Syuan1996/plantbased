@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common/rest.css">
+    <link rel="stylesheet" href="../css/common/style.css">
+    <link rel="stylesheet" href="../css/product/productInsidePages.css">
+
+</head>
+
+<body>
+
+    <!-- 跑馬燈導覽列-banner-start -->
+    <div id="marqueeHeaderWrapper"></div>
+    <!-- 跑馬燈導覽列-banner-end -->
+
+    <section class="productInside boundarypdwrap">
+        <div class="productInside width1200">
+            <div class="productInsideTop">
+                <div class="productInsideTopLeft">
+
+                    <div class="productInsideTopLeftLargeItem">
+                        <img id="largeImage" src="" alt="">
+                    </div>
+
+                    <div id="smallImagePanel" class="productInsideTopLeftSmallItem">
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/20.草莓、香菇、鳳梨乾/草莓、香菇、鳳梨乾 (250g)small1.jpg" alt="">
+                        </div>
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/20.草莓、香菇、鳳梨乾/草莓、香菇、鳳梨乾 (250g)small2.jpeg" alt="">
+                        </div>
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/20.草莓、香菇、鳳梨乾/草莓、香菇、鳳梨乾 (250g)small3.jpeg" alt="">
+                        </div>
+                        <div class="productSmall">
+                            <img src="../img/product/productInside/20.草莓、香菇、鳳梨乾/草莓、香菇、鳳梨乾 (250g)small4.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="productInsideTopRight">
+
+                    <h2> 草莓、香菇、鳳梨乾 (250g)</h2>
+
+                    <div class="underLineBall">
+                    </div>
+
+                    <div class="productInsideDes">
+
+                        <h3>繽紛香甜，熱帶風味巧妙融合</h3>
+
+                        <p>嚴選台灣新鮮草莓、香菇與鳳梨，採用低溫烘乾技術，完美保留各自獨特香氣與豐富口感，帶來前所未有的味覺驚喜，是健康美味的絕佳組合。
+                        </p>
+
+                        <ul>
+                            <li>成分: 草莓、香菇、鳳梨、少許天然糖（依實際商品調整）</li>
+                            <li>保存方式: 避免陽光直射，請存放於陰涼乾燥處</li>
+                            <li>賞味期限: 6 個月（開封後請盡速食用完畢）</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="priceNum">
+                        <div class="price">價格<span class="Digits">400</span>元</div>
+
+                        <div class="num">
+                            <span class="buynum">購買數量</span>
+                            <div class="numControl">
+                                <span class="reduce"><img src="../img/product/productInside/reduce.svg" alt=""></span>
+                                <span class="nowNumber">1</span>
+                                <span class="add"><img src="../img/product/productInside/add.svg" alt=""></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="buyCart">
+                        <button class="buy">直接購買</button>
+                        <button class="cart">加入購物車</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 下方其他詳細介紹start -->
+            <div class="productInsideBottom">
+
+                <div class="productInsideBottomPic">
+                    <img src="../img/product/productInside/20.草莓、香菇、鳳梨乾/草莓、香菇、鳳梨乾 (250g)detail1.jpeg" alt="">
+                </div>
+
+                <p>精選來自台灣契作的當季草莓、香菇與鳳梨，低溫烘乾工藝細膩鎖住果蔬的天然香氣與鮮美滋味。草莓乾酸甜適中，香菇乾帶來濃郁的自然木質香氣，鳳梨乾則散發熱帶果香，三者風味相互交織，層次豐富且回味無窮。全程無添加人工香料和色素，讓你在享受健康零嘴的同時，也能感受自然純淨的美味，是日常補充元氣的最佳選擇。
+                </p>
+            </div>
+
+            <!-- 下方其他詳細介紹end -->
+        </div>
+    </section>
+
+    <!-- footer-start -->
+    <div id="footerWrapper"></div>
+    <!-- footer-end -->
+
+    <script>
+        fetch('commonHtml/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('marqueeHeaderWrapper').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = '../js/common/menu.js';
+                document.body.appendChild(script);
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script>
+        fetch('commonHtml/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footerWrapper').innerHTML = data;
+            })
+            .catch(err => {
+                console.error('載入 header 失敗:', err);
+
+            });
+    </script>
+
+    <script src="../js/productInsidePages.js"></script>
+</body>
+
+</html>
