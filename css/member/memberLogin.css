@@ -12,6 +12,10 @@
 
 }
 
+.memberLoginContent form a {
+    color: black;
+}
+
 .memberLoginContent form div {
     display: flex;
     flex-direction: column;
