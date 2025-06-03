@@ -82,3 +82,9 @@ CloseMagnifier.addEventListener("click", () => {
 
 
 // 搜尋彈窗end
+
+
+// 表單禁止預設行為的判斷
+document.querySelector('form').addEventListener('submit', function (e) {
+  e.preventDefault(); // 阻止表單送出
+});
