@@ -733,38 +733,7 @@
 }
 
 
-
 /* 區塊二/最新消息 end */
-
-/* 區塊3~4波浪背景start */
-
-.waveBgWrap {
-  position: absolute;
-  width: 100%;
-  padding-bottom: 50.5%;
-  z-index: -1;
-  margin-top: -360px;
-  max-height: 975px;
-  min-height: 500px;
-  left: 0;
-  right: 0;
-}
-
-.waveBgWrap::after {
-  content: '';
-  position: absolute;
-  background-image: url("../img/index/brandItro/pattern/waveBg.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: -1;
-}
-
-/* 區塊3~4波浪背景end */
 
 /* 區塊三/品牌介紹 start */
 
@@ -772,6 +741,7 @@
   position: relative;
   padding: 0 15px;
   padding-bottom: 6.5vw;
+
 }
 
 .indexBrandWrap h4 {
@@ -1050,8 +1020,10 @@
 /* 區塊四/熱賣商品 start  */
 
 .indexHotItemsWrap {
+
   padding: 0 15px;
-  margin-bottom: 4vw;
+  margin-bottom: 65px;
+
 }
 
 .indexHotItemsWrap a {
@@ -1065,6 +1037,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2.6666666%;
+
 }
 
 .indexHotItem {

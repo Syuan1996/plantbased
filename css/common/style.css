@@ -513,6 +513,7 @@ footer {
 .yellowBlockFt {
   position: absolute;
   bottom: 55px;
+
 }
 
 .yellowBlockFt {
@@ -541,6 +542,15 @@ footer {
   .grapeFruitFt img {
     width: 100%;
   }
+
+  .yellowBlockFt {
+    right: -7vw;
+    z-index: -1;
+    width: 220px;
+    bottom: 100px;
+  }
+
+
 }
 
 
@@ -549,6 +559,9 @@ footer {
     display: none;
   }
 
+  .yellowBlockFt {
+    display: none;
+  }
 
 }
 

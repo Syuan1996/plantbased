@@ -1,4 +1,7 @@
 /* memberLoginContent start */
+main {
+    min-height: 45vh;
+}
 
 .memberLoginWrap {
     margin-bottom: 60px;
