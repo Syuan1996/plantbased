@@ -63,7 +63,6 @@ body {
 
 .marqueeWrapper {
   width: 100%;
-  max-width: 1920px;
   position: fixed;
   top: 0;
   right: 0;
@@ -502,7 +501,7 @@ footer {
   padding: 25px 15px 22px 15px;
   background-color: #683506;
   color: white;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   right: 0;
 }
