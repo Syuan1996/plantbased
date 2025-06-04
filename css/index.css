@@ -5,11 +5,16 @@
 }
 
 .swiper-wrapper {
+  aspect-ratio: 1424 / 724;
   width: 74.16%;
   /* ← 這是你輪播圖容器的最大設計寬 */
   height: auto;
   border-radius: 0px 0px 70px 0px;
   overflow: hidden;
+}
+
+.swiper-slide {
+  width: 100%;
 }
 
 .swiper-slide img {
@@ -146,55 +151,66 @@
 
 /* 自定義輪播圖放大小果 */
 .bannerSlider .swiper-slide img {
+  object-fit: cover;
   transform: scale(1);
   transition: transform 2.5s ease;
+  transform-origin: center bottom;
 }
 
 .bannerSlider .swiper-slide-active img {
+  object-fit: cover;
   transform: scale(1.05);
+  transform-origin: center bottom;
+
 }
 
 @media (max-width: 1880px) {
   .swiper-wrapper {
     width: 68%;
-    height: 640px;
-    /* border-radius: 0px 0px 80px 0px; */
+
     overflow: hidden;
   }
 
   .swiper-wrapper .swiper-slide img {
     max-width: 81%;
-    /* border-radius: 0px 0px 80px 0px; */
+
     height: auto;
   }
 
   .bannerContent {
     width: calc(100% - 66%);
     height: auto;
+
   }
 
   .bannerContent h2 {
+    margin-top: -50px;
     font-size: 60px;
     margin-left: -77px;
   }
 
   .bannerContent h2:nth-child(2) {
     margin-left: -20px;
+    margin-top: -25px;
+  }
+
+  .bannerShopBtn {
+    margin-top: 20px;
   }
 }
 
 @media (max-width: 1500px) {
+
+
   .swiper-wrapper {
     width: 65%;
-    height: 525px;
-    /* border-radius: 0px 0px 80px 0px; */
+
     overflow: hidden;
   }
 
   .swiper-wrapper .swiper-slide img {
     max-width: 76%;
-    /* border-radius: 0px 0px 80px 0px; */
-    height: auto;
+    height: 100%;
   }
 
   .bannerContent {
@@ -218,20 +234,19 @@
     width: 245px;
     height: 70px;
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
 @media (max-width: 1250px) {
   .swiper-wrapper {
     width: 61%;
-    height: 415px;
-    /* border-radius: 0px 0px 80px 0px; */
     overflow: hidden;
   }
 
   .swiper-wrapper .swiper-slide img {
     max-width: 68%;
-    /* border-radius: 0px 0px 80px 0px; */
+
     height: auto;
   }
 
@@ -253,7 +268,8 @@
   }
 
   .bannerShopBtn {
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 240px;
     height: 65px;
     font-size: 34px;
@@ -263,8 +279,7 @@
 @media (max-width: 1150px) {
   .swiper-wrapper {
     width: 63%;
-    height: 330px;
-    /* border-radius: 0px 0px 80px 0px; */
+
     overflow: hidden;
   }
 
