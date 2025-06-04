@@ -73,8 +73,6 @@ body {
   display: flex;
   gap: 40px;
   font-size: 18px;
-  /* padding-block: 8px; */
-  /* border-block: 1px solid; */
   overflow: hidden;
 }
 

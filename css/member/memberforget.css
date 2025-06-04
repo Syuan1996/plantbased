@@ -1,27 +1,30 @@
 main {
-    min-height: 27vh;
+    min-height: calc(100vh - 553px);
     margin-bottom: 60px;
 }
 
 .memberForgetContent p {
-    max-width: 250px;
+    max-width: 260px;
     margin: 0 auto;
     line-height: 1.4;
     text-align: center;
+    font-size: 18px;
 }
 
 .memberForgetContent form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 35px;
+    gap: 40px;
 }
 
 .memberForgetContent form input {
     width: 100%;
-    height: 50px;
+    height: 54px;
     font-size: 24px;
     padding-left: 20px;
+    background-color: #FFFDEC;
+    border: 1px solid #000;
 }
 
 .memberForgetContent button {
