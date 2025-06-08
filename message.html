@@ -40,100 +40,66 @@
 
     <!-- 表單內容區-start -->
 
-    <main class="messageWrap width1920">
-        <p>有任何問題或建請填寫表單，請留意「 * 」為必填欄位。</p>
-
-        <div class="formWrap width910">
-            <form action="" class="messageForm">
-                <div class="messageField">
-                    <label for="messageName">姓名(可填寫暱稱)<span class="star">*</span></label>
-                    <input type="text" name="messageName" id="messageName" placeholder="請輸入您的姓名" class="writeContent">
+    <main class="width1920">
+        <div class="messageWrap width1200">
+            <section class="messageLeft">
+                <p>有任何問題請填寫表單，請留意「 * 」為必填欄位。</p>
+                <div class="messageLeftPic">
+                    <img src="img/message/messagePeople.jpeg" alt="">
                 </div>
 
-                <div class="messageField">
-                    <div class="messageFieldGender">性別</div>
+            </section>
 
-                    <div class="messageGenderWrap">
-                        <div class="messageGender">
-                            <input type="radio" name="messageGender" id="messageGenderGirl">
-                            <label for="messageGenderGirl">女生</label>
-                        </div>
+            <section class="messageRight">
+                <form action="" class="messageForm">
+                    <div class="messageFormItem">
+                        <label for="messageName">姓名 (可以填寫暱稱)<span class="star">*</span></label>
 
-                        <div class="messageGender">
-                            <input type="radio" name="messageGender" id="messageGenderMale">
-                            <label for="messageGenderMale">男生</label>
-                        </div>
+                        <input type="text" name="messageName" id="messageName" placeholder="請輸入您的姓名"
+                            class="writeContent">
                     </div>
 
-                </div>
+                    <div class="messageFormItem">
+                        <div class="messageGenderTitle">性別</div>
 
-                <div class="messageField">
-                    <label for="messagePhoneNum">手機號碼<span class="star">*</span></label>
-                    <input type="tel" name="messagePhoneNum" id="messagePhoneNum" placeholder="請輸入您的手機號碼"
-                        class="writeContent">
-                </div>
+                        <div class="messageGenderWrap">
+                            <div class="messageGenderItem">
+                                <input type="radio" name="messageGender" id="messageGenderGirl">
+                                <label for="messageGenderGirl" class="radioCustom"><span
+                                        class="radioOuterLine"></span>女生</label>
+                            </div>
 
-                <div class="messageField">
-                    <label for="messagePhoneNum">電子郵件<span class="star">*</span></label>
-                    <input type="email" name="messagePhoneNum" id="messagePhoneNum" placeholder="請輸入您的電子郵件"
-                        class="writeContent">
-                </div>
-
-                <div class="messageField">
-                    <label for="messagePhoneNum">地址</label>
-                    <input type="email" name="messagePhoneNum" id="messagePhoneNum" placeholder="請輸入您的居住地址"
-                        class="writeContent">
-                </div>
-
-                <div class="messageField">
-                    <duv class="messageFieldTopic">詢問主題<span class="star">*</span></duv>
-
-                    <div class="messageTopicWrap">
-                        <div class="messageTopic">
-                            <input type="checkbox" name="messageTopic" id="messageTopicOrder">
-                            <label for="messageTopicOrder">訂購</label>
-                        </div>
-
-                        <div class="messageTopic">
-                            <input type="checkbox" name="messageTopic" id="messageTopicProduct">
-                            <label for="messageTopicProduct">產品</label>
-                        </div>
-
-                        <div class="messageTopic">
-                            <input type="checkbox" name="messageTopic" id="messageTopicLogin">
-                            <label for="messageTopicLogin">登入</label>
-                        </div>
-
-                        <div class="messageTopic">
-                            <input type="checkbox" name="messageTopic" id="messageTopicSign">
-                            <label for="messageTopicSign">註冊</label>
-                        </div>
-
-                        <div class="messageTopic">
-                            <input type="checkbox" name="messageTopic" id="messageTopicBind">
-                            <label for="messageTopicBind">合作</label>
-                        </div>
-
-                        <div class="messageTopic">
-                            <input type="checkbox" name="messageTopic" id="messageTopicOther">
-                            <label for="messageTopicOther">其他</label>
+                            <div class="messageGenderItem">
+                                <input type="radio" name="messageGender" id="messageGenderMale">
+                                <label for="messageGenderMale" class="radioCustom"><span
+                                        class="radioOuterLine"></span>男生</label>
+                            </div>
                         </div>
 
                     </div>
 
+                    <div class="messageFormItem">
+                        <label for="messagePhone">手機號碼</label>
+                        <input type="tel" name="messagePhone" id="messagePhone" placeholder="請輸入您的手機號碼"
+                            class="writeContent">
+                    </div>
 
+                    <div class="messageFormItem">
+                        <label for="messageEmail">電子郵件<span class="star">*</span></label>
+                        <input type="email" name="messageEmail" id="messageEmail" placeholder="請輸入您的電子郵件"
+                            class="writeContent">
+                    </div>
 
-                </div>
+                    <div class="messageFormItem">
+                        <label for="messageTextarea">詢問內容</label>
+                        <textarea name="messageTextarea" id="messageTextarea" class="messageTextarea"></textarea>
+                    </div>
 
+                    <button type="submit">送出資料</button>
 
-                <div class="messageField">
-                    <label for="messageTextarea">詢問內容</label>
-                    <textarea name="messageTextarea" id="messageTextarea" class="messageTextarea"></textarea>
-                </div>
-                <button type="submit">送出資料</button>
-            </form>
+                </form>
+            </section>
         </div>
-
     </main>
 
     <!-- 表單內容區-end -->
