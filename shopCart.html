@@ -7,6 +7,7 @@
     <title>植感輕食-蔬菜乾、水果乾、綜合蔬果乾專賣店</title>
     <link rel="stylesheet" href="css/common/rest.css">
     <link rel="stylesheet" href="css/common/style.css">
+    <link rel="stylesheet" href="css/common/innerBanner.css">
     <link rel="stylesheet" href="css/shopCart.css">
 </head>
 
@@ -15,184 +16,281 @@
     <div id="marqueeHeaderWrapper"></div>
     <!-- 跑馬燈導覽列-banner-end -->
 
-    <main class="shopCartWrap width1920">
-        <section class="width1200">
-            <h3><img src="img/shopCart/shopCartIcon.svg" alt="">購物車</h3>
-            <div class="shopNav">
-                <span class="shopItemNameTag">商品名稱</span>
-                <span class="shopItemMoneyTag">金額</span>
-                <span class="shopItemNumberTag">數量</span>
-                <span class="shopItemSumTag">小計</span>
+    <!-- 購物車頁-banner-start -->
+
+    <section class="innerBanner width1920">
+
+        <div class="bgBlock"></div>
+
+        <div class="innerBannerContent">
+            <div class="bannerBgImg"><img src="img/product/productBanner.jpg" alt=""></div>
+
+            <div class="innerBannerTitle">
+                <h2>購物車</h2>
+                <p>Shop Cart <span></span></p>
             </div>
-            <ul class="shopItemList">
-                <li class="shopItem">
-                    <div class="shopItemPic">
-                        <img src="img/shopCart/水蜜桃果乾(250g).jpg" alt="">
-                    </div>
-                    <div class="shopItemNameDollar">
-                        <h2>水蜜桃果乾(250g)</h2>
-                        <span class="oneItemDollar">400元</span>
-                    </div>
-                    <div class="quantity">2</div>
-                    <span class="subTotal">800元</span>
-                    <div class="deleteItem"><button>刪除</button></div>
-                </li>
+        </div>
 
-                <li class="shopItem">
-                    <div class="shopItemPic">
-                        <img src="img/shopCart/秋葵乾(250g).jpg" alt="">
-                    </div>
-                    <div class="shopItemNameDollar">
-                        <h2>秋葵乾(250g)</h2>
-                        <span class="oneItemDollar">300元</span>
-                    </div>
-                    <div class="quantity">1</div>
-                    <span class="subTotal">300元</span>
-                    <div class="deleteItem"><button>刪除</button></div>
-                </li>
+    </section>
 
-                <li class="shopItem">
-                    <div class="shopItemPic">
-                        <img src="img/shopCart/鳳梨果乾(250g).jpg" alt="">
-                    </div>
-                    <div class="shopItemNameDollar">
-                        <h2>鳳梨果乾(250g)</h2>
-                        <span class="oneItemDollar">300元</span>
-                    </div>
-                    <div class="quantity">10</div>
-                    <span class="subTotal">3000元</span>
-                    <div class="deleteItem"><button>刪除</button></div>
-                </li>
-            </ul>
-        </section>
-        <section class="width1200 Shopform">
-            <form action="" method="post">
-                <div class="ShopformContent">
-                    <div class="leftBuyInfo">
-                        <div class="deliveryGroup">
-                            <h4>運送方式</h4>
-                            <div class="deliveryHome">
-                                <div class="deliveryOptionHS">
-                                    <input type="radio" name="deliveryOptionHS" value="homedelivery" id="homedelivery">
-                                    <label for="homedelivery">宅配</label>
+    <!-- 購物車頁-banner-end -->
+
+    <main class="shopCartWrap width1920">
+        <form action="#" method="post" class="width1200">
+            <!-- 產品內容金額區塊start -->
+            <section class="shopItemWrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="shopPrName">商品名稱</th>
+                            <th class="shopCash">金額</th>
+                            <th class="shopNum">數量</th>
+                            <th class="shopSum">小計</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div>
+                                    <img src="img/shopCart/水蜜桃果乾(250g).jpg" alt="">
                                 </div>
-                                <div class="homeAddress">
-                                    <label for="home-address">配送地址</label>
-                                    <input type="text" id="home-address" name="home-address" placeholder="請輸入地址">
+                                <h3>水蜜桃果乾(250g)</h3>
+                            </td>
+                            <td data-label="金額">
+                                400元
+                            </td>
+                            <td data-label="數量">
+                                <div class="shopNumWrap">
+                                    <button type="button" a><img src="" alt=""><img
+                                            src="img/product/productInside/reduce.svg" alt=""></button>
+                                    <input type="text" value="10">
+                                    <button type="button"><img src="img/product/productInside/add.svg" alt=""></button>
+                                </div>
+                            </td>
+                            <td data-label="小計">
+                                <div class="subtotalWrap"> <span>800元</span>
+                                    <img src="img/shopCart/garbageCan.png" alt="">
                                 </div>
 
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div>
+                                    <img src="img/shopCart/秋葵乾(250g).jpg" alt="">
+                                </div>
+                                <h3>水蜜桃果乾(250g)</h3>
+                            </td>
+                            <td data-label="金額">
+                                400元
+                            </td>
+                            <td data-label="數量">
+                                <div class="shopNumWrap">
+                                    <button type="button" a><img src="" alt=""><img
+                                            src="img/product/productInside/reduce.svg" alt=""></button>
+                                    <input type="text" value="10">
+                                    <button type="button"><img src="img/product/productInside/add.svg" alt=""></button>
+                                </div>
+
+                            </td>
+                            <td data-label="小計">
+                                <div class="subtotalWrap"> <span>800元</span>
+                                    <img src="img/shopCart/garbageCan.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div>
+                                    <img src="img/shopCart/鳳梨果乾(250g).jpg" alt="">
+                                </div>
+                                <h3>水蜜桃果乾(250g)</h3>
+                            </td>
+                            <td data-label="金額">
+                                400元
+                            </td>
+                            <td data-label="數量">
+                                <div class="shopNumWrap">
+                                    <button type="button" a><img src="" alt=""><img
+                                            src="img/product/productInside/reduce.svg" alt=""></button>
+                                    <input type="text" value="10">
+                                    <button type="button"><img src="img/product/productInside/add.svg" alt=""></button>
+                                </div>
+                            </td>
+                            <td data-label="小計">
+                                <div class="subtotalWrap"> <span>800元</span>
+                                    <img src="img/shopCart/garbageCan.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>商品總額:<span>4100</span>元</td>
+                            <td>運費:<span>0</span>元</td>
+                            <td class="CheckAmount" colspan="2">結帳金額:<span>4000</span>元</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <!-- 產品內容金額區塊end -->
+
+            <!-- 訂購資訊填寫start -->
+            <section class="shopInfoWrap">
+                <fieldset>
+                    <legend>收件人資料填寫</legend>
+                    <div class="recipientWrap">
+                        <div>
+                            <label for="shopName">姓名</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label for="shopPhone">手機</label>
+                            <input type="text">
+                        </div>
+
+                        <div>
+                            <label for="shopEmail">信箱</label>
+                            <input type="text">
+                        </div>
+
+                        <div>
+                            <label for="shopTel">市話</label>
+                            <input type="text" placeholder="非必填">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="deliveryWrap">
+                    <legend>運送方式</legend>
+
+                    <div class="deliveryMethod">
+                        <div class="homeDeliveryWrap">
+                            <input type="radio" name="Delivery" id="homeDelivery">
+                            <label for="homeDelivery">宅配</label>
+                        </div>
+                        <div class="superMarketWrap">
+                            <input type="radio" name="Delivery" id="superMarket">
+                            <label for="superMarket">超商</label>
+                        </div>
+                    </div>
+
+                    <div class="deliveryAddress">
+                        <select name="" id="citySelect" class="citySelect">
+                            <option value="">選擇縣市</option>
+                        </select>
+
+                        <select name="" id="townSelect" class="townSelect">
+                            <option value="">選擇鄉鎮區</option>
+                        </select>
+                        <input type="text" placeholder="詳填收件其餘地址(路名、門牌號)...">
+                    </div>
+
+                    <div class="famSevWrap">
+                        <div class="famWrap">
+                            <input type="radio" name="famSev" id="family">
+                            <label for="family">全家超商</label>
+                            <button type="button">選擇門市</button>
+                            <input type="text">
+                        </div>
+                        <div class="sevWrap">
+                            <input type="radio" name="famSev" id="seven">
+                            <label for="seven">7-11</label>
+                            <button type="button">選擇門市</button>
+                            <input type="text">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>付款方式</legend>
+
+                    <div class="paymentMethodWrap">
+                        <div class="creditCardWrap">
+                            <input type="radio" name="Payment" id="creditCard">
+                            <label for="creditCard">信用卡付款</label>
+                        </div>
+
+                        <div class="cashArriveWrap">
+                            <input type="radio" name="Payment" id="cashArrive">
+                            <label for="cashArrive">貨到付款</label>
+
+                        </div>
+
+                        <div class="transMoneyWrap">
+                            <input type="radio" name="Payment" id="transMoney">
+                            <label for="transMoney">轉帳</label>
+                        </div>
+
+                    </div>
+
+                    <div class="cardInfo">
+                        <div class="cardNumWrap">
+                            <label>信用卡卡號:</label>
+                            <input type="text" class="cardNumInput">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </div>
+
+                        <div class="cardDateCvcWrap">
+                            <div class="cardDateWrap">
+                                <label for="cardDate">有效日期:</label>
+                                <input type="text" id="cardDate" placeholder="MM/YY">
                             </div>
-                            <div class="convenienceStoreALL">
-                                <div class="deliveryOptionHS">
-                                    <input type="radio" name="deliveryOptionHS" value="storedelivery">
-                                    <label for="">超商</label>
-                                </div>
 
-                                <div class="convenienceStore">
-                                    <div class="StoreOptionFS">
-                                        <div class="StoreOptionF">
-                                            <input type="radio" name="StoreOptionFE" value="familyStore">
-                                            <label for="">FamilyMart</label>
-                                        </div>
-                                        <div class="StoreOptionE">
-                                            <input type="radio" name="StoreOptionFE" value="ElevenStore">
-                                            <label for="">7-Eleven</label>
-                                        </div>
-
-                                    </div>
-                                    <div class="StoreDetailChange">
-                                        <div class="StoreTopCol">
-                                            <label for="StoreTopCol">門市名稱</label>
-                                            <input type="text" name="StoreName" id="StoreTopCol">
-                                            <a href="#" class="chooseStore">選擇門市</a>
-                                        </div>
-                                        <div class="StoreBottomCol">
-                                            <label for="StoreAddress">門市地址</label>
-                                            <input type="text" name="StoreAddress" id="StoreAddress">
-                                        </div>
-                                    </div>
-                                </div>
-
+                            <div class="cardCvcWrap">
+                                <label for="cardCvc">安全碼:</label>
+                                <input type="text" id="cardCvc" placeholder="CVC">
                             </div>
                         </div>
 
-                        <div class="invoice">
-                            <h4>發票類型</h4>
-                            <div class="invoiceWrap">
-                                <div class="invoiceType">
-                                    <input type="radio" id="phoneCarrier" name="invoiceType">
-                                    <label for="phoneCarrier">手機載具</label>
-                                </div>
+                    </div>
+                </fieldset>
 
-                                <div class="invoiceType">
-                                    <input type="radio" id="companyInvoice" name="invoiceType">
-                                    <label for="companyInvoice">公司發票</label>
-                                </div>
-
-                                <div class="invoiceType">
-                                    <input type="radio" id="phoneCarrier" name="invoiceType">
-                                    <label for="phoneCarrier">捐贈發票</label>
-                                </div>
-                            </div>
-                            <input type="text" class="invoiceWrite">
+                <fieldset>
+                    <legend>發票類型</legend>
+                    <div class="invoiceWrap">
+                        <div class="phoneInvoiceWrap">
+                            <input type="radio" id="phoneInvoice" name="InvoiceType">
+                            <label for="phoneInvoice">手機載具</label>
                         </div>
-                        <div class="ShopRemark">
-                            <h4>備註事項</h4>
-                            <textarea>
-                            </textarea>
+
+                        <div class="companyInvoiceWrap">
+                            <input type="radio" id="companyInvoice" name="InvoiceType">
+                            <label for="companyInvoice">公司發票</label>
+
+                        </div>
+
+                        <div class="elecInvoiceWrap">
+                            <input type="radio" id="elecInvoice" name="InvoiceType">
+                            <label for="elecInvoice">電子發票</label>
+
+                        </div>
+
+                        <div class="donateInvoiceWrap">
+                            <input type="radio" id="donateInvoice" name="InvoiceType">
+                            <label for="donateInvoice">捐贈發票</label>
                         </div>
                     </div>
 
-                    <div class="rightBuyInfo">
-                        <div class="shopMoneys">
-                            <div class="sumsMoney"><span>商品總額:</span><span>4100元</span></div>
-                            <div class="deliverMoney"><span>運送費用:</span><span>0元</span> </div>
-                            <div class="AllMoney"><span>結帳金額:</span><span>4100元</span></div>
-                        </div>
-                        <div class="recipientInfo">
-                            <h4>收件人資料填寫</h4>
-                            <div class="recipientNameWrap">
-                                <label for="recipientName">姓名:</label>
-                                <input type="text" id="recipientName">
-                            </div>
-                            <div class="recipientPhoneWrap">
-                                <label for="recipientPhone">電話:</label>
-                                <input type="text" id="recipientPhone">
-                            </div>
-                            <div class="recipientEmailWrap">
-                                <label for="recipientEmail">信箱:</label>
-                                <input type="email" id="recipientEmail">
-                            </div>
-                        </div>
+                    <input type="text" placeholder="請輸入載具例如 /BRDF26Y" class="phoneInvoiceWrite">
 
-                        <div class="PaymentMethod">
-                            <h4>付款方式</h4>
+                    <!-- <input type="text" placeholder="請輸入公司統一編號" class="phoneInvoiceWrite"> -->
 
-                            <div class="PaymentMethodWrap">
-                                <div class="PaymentMethodItem">
-                                    <input type="radio" id="cashOnDelivery" name="PaymentMethod">
-                                    <label for="cashOnDelivery">貨到付款</label>
-                                </div>
+                </fieldset>
 
-                                <div class="PaymentMethodItem">
-                                    <input type="radio" id="atmTransfer" name="PaymentMethod">
-                                    <label for="atmTransfer">轉帳</label>
-                                </div>
+                <fieldset>
+                    <legend>備註事項</legend>
+                    <textarea name="shopTextarea"></textarea>
+                </fieldset>
+            </section>
+            <!-- 訂購資訊填寫end -->
 
-                                <div class="PaymentMethodItem">
-                                    <input type="radio" id="creditCard" name="PaymentMethod">
-                                    <label for="creditCard">信用卡付款</label>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <button type="submit" class="confirmCheckout">確認結帳</button>
-
-            </form>
-        </section>
+            <button type="submit" id="ConfirmPayBtn" class="ConfirmPayBtn">確認結帳</button>
+        </form>
     </main>
 
     <!-- footer-start -->
