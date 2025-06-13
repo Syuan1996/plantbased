@@ -46,6 +46,7 @@
   margin-left: -290px;
   margin-bottom: 50px;
   background-color: #FFFDF7;
+  border-radius: 0px 5px 0px 5px;
 }
 
 .bannerContent h2:nth-child(2) {

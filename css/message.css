@@ -44,24 +44,26 @@ main {
 .messageFormItem {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin-bottom: 28px;
+    gap: 10px;
+    margin-bottom: 30px;
 }
 
 .messageFormItem label,
 .messageGenderTitle {
     font-size: 24px;
-    color: #512B00;
+    color: #482700;
 }
 
 .messageGenderTitle {
     margin-bottom: 8px;
+
+
 }
 
 .messageFormItem input {
     outline: none;
     border: none;
-    border-bottom: 1.5px solid #9D5400;
+    border-bottom: 2px solid #bc6500;
     min-height: 45px;
 
     font-size: 22px;
@@ -90,6 +92,7 @@ main {
     gap: 14px;
     cursor: pointer;
     align-items: center;
+
 }
 
 .radioOuterLine {
@@ -97,7 +100,7 @@ main {
     display: block;
     width: 23px;
     height: 23px;
-    border: 2px solid #512B00;
+    border: 2px solid #bc6500;
     border-radius: 50%;
 }
 
@@ -106,7 +109,7 @@ main {
     display: block;
     width: 13.5px;
     height: 13.5px;
-    background-color: #512B00;
+    background-color: #bc6500;
     border-radius: 50%;
 
     position: absolute;
@@ -130,7 +133,7 @@ main {
     font-size: 22px;
     min-height: 200px;
     resize: vertical;
-    border: 1.5px solid #9D5400;
+    border: 2px solid #bc6500;
     outline: none;
     margin-top: 5px;
     border-radius: 10px;
@@ -150,8 +153,11 @@ main {
     color: white;
     margin-top: 2.5vw;
     border-radius: 10px;
+}
 
-
+.messageForm input::placeholder {
+    font-size: 20px;
+    color: rgb(171, 171, 171);
 }
 
 /*  mainMessageFormd-end*/

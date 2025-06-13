@@ -26,6 +26,14 @@
   margin: 0 auto;
 }
 
+.width960 {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+
 img {
   max-width: 100%;
   height: auto;
@@ -142,14 +150,9 @@ h1 {
 
 
 .mainNav>ul {
-
   display: flex;
-  /* height: 100px;
-  line-height: 100px; */
   gap: 1.55vw;
 }
-
-
 
 .dropdownArrow {
   display: none;
@@ -206,29 +209,50 @@ h1 {
 .iconNav ul {
   display: flex;
   align-items: center;
-  gap: 1.6vw;
+  gap: 33px;
 
+}
+
+.mainNav ul>li {
+  position: relative;
 }
 
 .dropdown {
-
   display: none;
   position: absolute;
-  top: 100%;
-  max-width: 150px;
+  top: 80%;
+  left: -25%;
+
+  min-width: 128px;
   text-align: center;
 
-  background-color: #ffecd6;
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 
-.dropdown li {
+.dropdown::before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 85%;
+  height: 2px;
+  border-radius: 10%;
+  background-color: rgb(255, 153, 0);
+}
 
-  border-bottom: 1px solid #b34100;
+.dropdown li:not(:last-child):after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 85%;
+  height: 1px;
+  background-color: rgb(206, 206, 206);
 }
 
 .mainNav .dropdown li a {
   font-size: 18.5px;
 }
+
 
 
 .productDropdown:hover .dropdown {
@@ -251,7 +275,11 @@ h1 {
   display: none;
 }
 
-@media screen and (max-width:950px) {
+@media screen and (max-width:1023px) {
+
+  .mainNav>ul {
+    gap: 2.4vw;
+  }
 
   .mainNav>ul>li>a {
 
@@ -260,28 +288,63 @@ h1 {
 
 
   .iconNav {
-    position: absolute;
+    position: fixed;
     right: 0px;
-    top: 200%;
-
-
+    left: 0px;
+    bottom: 0px;
   }
 
   .iconNav ul {
-    border-left: 1px solid #E67E06;
-    border-top: 1px solid #E67E06;
-    border-bottom: 1px solid #E67E06;
-    border-radius: 10px 0px 0px 10px;
-    flex-direction: column;
-    background-color: white;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 0px;
+  }
+
+  .iconNav ul li {
+    flex-grow: 1;
+    text-align: center;
+    background-color: #242323;
+  }
+
+  .iconNav ul li:last-child {
+    align-self: stretch;
+  }
+
+  .iconNav ul li:nth-child(2) {
+    border-left: 1px dotted #ffffff;
+    border-right: 1px dotted #ffffff;
+  }
+
+
+  .iconNav ul li a {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(157deg) brightness(112%) contrast(101%);
+    height: 100%;
+    display: block;
+    padding: 20px 20px;
+
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 0%;
+
+    min-width: 128px;
+    text-align: center;
+
+    background-color: #ffffff;
 
 
   }
 
-  .iconNav ul li a {
-    display: block;
-    padding: 10px;
+  .dropdown::before {
+    width: 100%;
 
+  }
+
+  .dropdown li:not(:last-child):after {
+    width: 100%;
   }
 
 }
@@ -327,15 +390,20 @@ h1 {
     width: 30px;
   }
 
+  .closeNav img {
+    height: 24.5px;
+  }
+
   .mainNav {
+
     width: 50vw;
-    background-color: rgb(255, 225, 196);
-    padding: 90px 20px 30px 20px;
+    background-color: rgb(244, 239, 217);
+    padding: 30px;
     position: absolute;
     top: 100%;
     right: 0%;
     height: 100vh;
-
+    box-shadow: inset 1px 1px 15px rgb(252, 249, 231);
   }
 
   .mainNav ul {
@@ -355,27 +423,6 @@ h1 {
 
   }
 
-  .iconNav {
-
-    width: 41vw;
-    top: 120%;
-    right: 5VW;
-    border-bottom: 1px solid rgb(241, 56, 0);
-
-  }
-
-
-  .iconNav ul {
-    justify-content: space-between;
-    gap: 1vw;
-    flex-direction: row;
-    border: none;
-    background-color: transparent;
-
-  }
-
-
-
   /* 阻止手機版跳轉問題 */
 
 
@@ -385,12 +432,11 @@ h1 {
 
     text-align: left;
 
-    background-color: #ffefde;
+
   }
 
   /* 預設隱藏手機選單 */
-  .mainNav,
-  .iconNav {
+  .mainNav {
     display: none;
   }
 
@@ -405,6 +451,13 @@ h1 {
 
   }
 
+}
+
+@media screen and (max-width:500px) {
+  .mainNav {
+
+    width: 65vw;
+  }
 }
 
 /* 導覽列end  */
@@ -602,7 +655,7 @@ footer {
 
 footer p {
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.6;
 
 }
 
@@ -618,17 +671,27 @@ footer p {
 
 .footerRight ul {
   display: flex;
-  gap: 2vw;
+  gap: 30px;
+  margin-bottom: 4px;
 }
 
 .Copyright {
   font-size: 16px;
-  padding-top: 1vw;
+
   text-align: center;
 }
 
+@media screen and (max-width:1023px) {
+  footer {
+    padding-bottom: 95px;
+  }
+}
 
 @media screen and (max-width:767px) {
+  footer {
+    padding-bottom: 85px;
+  }
+
   .footerWrapper {
     flex-wrap: wrap;
     justify-content: center;
@@ -644,11 +707,11 @@ footer p {
     padding-top: 4vw;
     padding-bottom: 1vw;
 
-    margin: 0 auto;
   }
 
   .footerRight ul {
-    gap: 8vw;
+    gap: 5.5vw;
+    margin-bottom: 7px;
   }
 
 
@@ -672,7 +735,28 @@ footer p {
     width: 74%;
   }
 
+  .footerRight p {
 
+    text-align-last: left;
+  }
+
+}
+
+@media screen and (max-width:390px) {
+  footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .footerLeft,
+  .footerCenter {
+    min-width: 95%;
+    margin: 0 auto;
+  }
+
+  .footerRight {
+    width: 94%;
+  }
 }
 
 

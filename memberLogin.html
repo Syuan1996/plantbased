@@ -7,8 +7,7 @@
     <title>植感輕食-蔬菜乾、水果乾、綜合蔬果乾專賣店</title>
     <link rel="stylesheet" href="css/common/rest.css">
     <link rel="stylesheet" href="css/common/style.css">
-
-    <link rel="stylesheet" href="css/common/memberBanner.css">
+    <link rel="stylesheet" href="css/common/innerBanner.css">
     <link rel="stylesheet" href="css/member/memberLogin.css">
 </head>
 
@@ -17,25 +16,66 @@
     <div id="marqueeHeaderWrapper"></div>
     <!-- 跑馬燈導覽列-banner-end -->
 
+    <!-- 會員登入-banner-start -->
 
-    <!-- 會員登入banner start -->
-    <section class="memberBanner width1920">
-        <h3>會員登入</h3>
+    <section class="innerBanner width1920">
+        <div class="bgBlock"></div>
+        <div class="innerBannerContent">
+            <div class="bannerBgImg"><img src="img/product/productBanner.jpg" alt=""></div>
+            <div class="innerBannerTitle">
+                <h2>會員登入</h2>
+                <p>Login <span></span></p>
+            </div>
+        </div>
     </section>
-    <!-- 會員登入banner end -->
+
+    <!-- 會員登入-banner-end -->
 
     <main>
-        <section class="memberLoginWrap width1920">
-            <div class="memberLoginContent width550">
+        <div class="advertiseLogin width960">
+            <section class="advertisewrap">
+                <div>
+                    <img src="./img/member/thumbtack.svg" alt="" class="thumbtack">
+                    <h3>會員本周特惠</h3>
+                    <div class="adCard">
+                        <div class="adCardPic"><img src="./img/member/kiwi.jpg" alt=""></div>
+                        <div class="adCardDes">
+                            <h4>奇異果果乾</h4>
+                            <div class="giveBonus">買4送1</div>
+                            <a href="">查看商品</a>
+                        </div>
+                    </div>
+
+                    <div class="adCard">
+                        <div class="adCardPic"><img src="./img/member/carrot.jpg" alt=""></div>
+                        <div class="adCardDes">
+                            <h4>紅蘿蔔乾</h4>
+                            <div class="giveBonus">買3送1</div>
+                            <a href="">查看商品</a>
+                        </div>
+                    </div>
+
+                    <div class="adCard">
+                        <div class="adCardPic"><img src="./img/member/peach.jpg" alt=""></div>
+                        <div class="adCardDes">
+                            <h4>水蜜桃果乾</h4>
+                            <div class="giveBonus">買5送1</div>
+                            <a href="">查看商品</a>
+                        </div>
+                    </div>
+
+            </section>
+
+            <section class="memberLoginWrap">
                 <form action="">
                     <div>
-                        <label for="memberLoginEmail">電子郵件</label>
-                        <input type="email" name="memberLoginEmail" id="memberLoginEmail">
+                        <label for="loginEmail">電子郵件</label>
+                        <input type="email" id="loginEmail" name="loginEmail">
                     </div>
 
                     <div>
-                        <label for="memberLoginEmail">密碼</label>
-                        <input type="password" name="memberLoginPw" id="memberLoginPw">
+                        <label for="loginPassword">密碼</label>
+                        <input type="password" name="loginPassword" id="loginPassword">
                         <p class="forgetPw"><a href="memberforget.html" #>忘記密碼?</a></p>
                     </div>
 
@@ -43,9 +83,8 @@
                     <p class="register"><a href="memberRegister.html">註冊新會員</a></p>
 
                 </form>
-
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
     <!-- footer-start -->
