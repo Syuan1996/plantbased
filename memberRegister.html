@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="css/common/rest.css">
     <link rel="stylesheet" href="css/common/style.css">
 
-    <link rel="stylesheet" href="css/common/memberBanner.css">
+    <link rel="stylesheet" href="css/common/innerBanner.css">
 
+    <link rel="stylesheet" href="css/member/memberLogin.css">
     <link rel="stylesheet" href="css/member/memberRegister.css">
 </head>
 
@@ -19,85 +20,78 @@
     <!-- 跑馬燈導覽列-banner-end -->
 
 
-    <!-- 會員註冊banner start -->
-    <section class="memberBanner width1920">
-        <h3>會員註冊</h3>
+    <!-- 會員註冊-banner-start -->
+
+    <section class="innerBanner width1920">
+        <div class="bgBlock"></div>
+        <div class="innerBannerContent">
+            <div class="bannerBgImg"><img src="img/product/productBanner.jpg" alt=""></div>
+            <div class="innerBannerTitle">
+                <h2>會員註冊</h2>
+                <p>Register <span></span></p>
+            </div>
+        </div>
     </section>
-    <!-- 會員註冊banner end -->
+
+    <!-- 會員註冊-banner-end -->
 
     <main>
-        <section class="memberRegisterWrap width1920">
+        <div class="advertiseLogin width960">
+            <!-- 載入側邊廣告內容start -->
+            <section class="advertisewrap" id="advertisewrap">
+            </section>
+            <!-- 載入側邊廣告內容end -->
 
-            <div class="memberRegisterContent width550">
+            <section class="memberWrap">
                 <form action="">
-
-                    <div class="registerWholeName">
-                        <div class="firstName">
-                            <label for="firstName">姓</label>
-                            <input type="text" id="firstName">
-                        </div>
-
-                        <div class="lastName">
-                            <label for="lastName">名</label>
-                            <input type="text" id="lastName">
-                        </div>
+                    <div class="writeTextWrap">
+                        <label for="registerName">姓名</label>
+                        <input type="text" id="registerName" name="registerName" placeholder="請輸入您的姓名"
+                            class="writeText">
                     </div>
 
-
-                    <div class="registerGender">
-                        <p>性別</p>
-
-                        <div class="registerGenderWrap">
+                    <div class="registerGenderWrap">
+                        <label class="GenderTitle">性別</label>
+                        <div class="GenderContent">
                             <div>
-                                <input type="radio" id="registerGirl" name="registerGender">
-                                <label for="registerGirl">女生</label>
+                                <input type="radio" name="gender" id="girl">
+                                <label for="girl" class="radioCustom"> <span class="radioOuterLine"></span>女生</label>
                             </div>
+
                             <div>
-                                <input type="radio" id="registerBoy" name="registerGender">
-                                <label for="registerBoy">男生</label>
+                                <input type="radio" name="gender" id="male">
+                                <label for="male" class="radioCustom"><span class="radioOuterLine"></span>男生</label>
                             </div>
                         </div>
                     </div>
 
-                    <div class="birthDate">
-                        <label for="birthDate">出生日期</label>
-                        <input type="date" id="birthDate">
-                    </div>
-
-                    <div class="registerPhone">
-                        <label for="registerPhone">電話</label>
-                        <input type="tel" name="registerPhone" id="registerPhone">
-                    </div>
-
-                    <div class="registerEmail">
+                    <div class="writeTextWrap">
                         <label for="registerEmail">電子郵件</label>
-                        <input type="email" name="registerEmail" id="registerEmail">
+                        <input type="email" id="registerEmail" name="registerEmail" placeholder="請輸入您的電子郵件"
+                            class="writeText">
                     </div>
 
-                    <div class="registerPassword">
+
+                    <div class="writeTextWrap">
                         <label for="registerPassword">密碼</label>
-                        <input type="text" id="registerPassword">
+                        <input type="password" name="registerPassword" id="registerPassword" placeholder="請輸入您的密碼"
+                            class="writeText">
+
                     </div>
 
-                    <div class="registerPasswordConfirm">
-                        <label for="registerPasswordConfirm">確認密碼</label>
-                        <input type="text" id="registerPasswordConfirm">
+                    <div class="writeTextWrap confirmPassWrap">
+                        <label for="confirmPassword">確認密碼</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="請再一次輸入您的密碼"
+                            class="writeText">
+
                     </div>
 
-                    <div class="Subscribeletter">
-                        <input type="checkbox" name="" id="">
-                        <label for="">訂閱電子報</label>
-                    </div>
-
-                    <button type="submit">註冊</button>
-                    <p class="login"><a href="memberLogin.html">已是會員者請到這登入</a></p>
+                    <button type="submit" class="registerSubmit">註冊</button>
+                    <p class="register"><a href="memberLogin.html">已有會員到此登入</a></p>
 
                 </form>
-
-            </div>
-
-
-        </section>
+            </section>
+        </div>
 
     </main>
 
@@ -119,6 +113,21 @@
                 console.error('載入 header 失敗:', err);
 
             });
+    </script>
+
+    <script>
+        fetch('commonHtml/memberleft.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('advertisewrap').innerHTML
+                    = data;
+            }).catch(err => {
+                console.error('載入member廣告側邊內容失敗', err);
+
+
+            })
+
+
     </script>
 
     <script>

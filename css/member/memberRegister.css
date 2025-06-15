@@ -1,147 +1,63 @@
-.memberRegisterContent {
+.memberWrap {
 
-    margin-bottom: 100px;
-}
+    padding-top: 0px;
 
-.memberRegisterContent form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 24px;
-    gap: 28px;
-}
-
-.memberRegisterContent form>div {
-    width: 100%;
-}
-
-
-.memberRegisterContent form input {
-    height: 50px;
-    font-size: 23px;
-    padding-left: 10px;
-    background-color: #FFFDEC;
-    border: 1px solid #000;
-}
-
-
-
-.registerWholeName {
-
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.registerWholeName div {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-}
-
-.registerWholeName div label {
-    margin-bottom: 10px;
-}
-
-.registerWholeName .lastName {
-    width: 60%;
-}
-
-
-.registerGender p {
-    margin-bottom: 9px;
 }
 
 .registerGenderWrap {
+
+    margin-bottom: 25px;
+}
+
+.GenderTitle {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.GenderContent {
     display: flex;
-    gap: 15px;
+    gap: 30px;
 }
 
-.registerGenderWrap div {
-    width: 20%;
+/* 自訂義radio樣式start */
+.registerGenderWrap input[type="radio"] {
+    display: none;
+
+}
+
+.registerGenderWrap .radioCustom {
     display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.registerGenderWrap div input {
-    width: 22px;
-}
-
-.birthDate {
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.registerPhone {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-
-.registerEmail {
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.registerPassword {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.registerPasswordConfirm {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: -15px;
-}
-
-.Subscribeletter {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 20px;
-}
-
-.Subscribeletter input {
-    width: 20px;
-}
-
-.memberRegisterContent button {
-    font-size: 24px;
-    width: 50%;
-    border: none;
-    background-color: #F88400;
-    padding: 10px 0;
+    gap: 14px;
     cursor: pointer;
+    align-items: center;
+
 }
 
-.login a {
-    text-decoration: none;
-    color: #000;
-}
-
-.login {
+.radioOuterLine {
     position: relative;
-    font-size: 20px;
-    border-bottom: 1px solid #000;
-    padding: 0px 20px 4px 2px;
+    display: block;
+    width: 23px;
+    height: 23px;
+    border: 2px solid #bc6500;
+    border-radius: 50%;
+}
+
+.registerGenderWrap input[type="radio"]:checked+label .radioOuterLine::after {
+    content: '';
+    display: block;
+    width: 13.5px;
+    height: 13.5px;
+    background-color: #bc6500;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-51%, -50%);
 
 }
 
-.login::after {
-    content: "";
-    position: absolute;
-    width: 13px;
-    border-top: 1px solid #000;
-    right: 0px;
-    bottom: -1px;
-    transform: rotate(30deg);
-    transform-origin: right bottom;
+/* 自訂義radio樣式end */
+
+.writeTextWrap.confirmPassWrap {
+    margin-bottom: 35px;
 }

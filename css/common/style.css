@@ -395,7 +395,7 @@ h1 {
   }
 
   .mainNav {
-
+    overflow-y: scroll;
     width: 50vw;
     background-color: rgb(244, 239, 217);
     padding: 30px;
@@ -403,6 +403,7 @@ h1 {
     top: 100%;
     right: 0%;
     height: 100vh;
+    padding-bottom: 250px;
     box-shadow: inset 1px 1px 15px rgb(252, 249, 231);
   }
 
@@ -717,7 +718,7 @@ footer p {
 
 }
 
-@media screen and (max-width:530px) {
+@media screen and (max-width:560px) {
 
   .footerLeft,
   .footerCenter {

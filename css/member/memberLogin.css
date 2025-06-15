@@ -2,48 +2,113 @@
 main {
     min-height: 45vh;
     margin-bottom: 60px;
+    padding: 0px 15px 0px 18px;
 }
 
 .advertiseLogin {
-    background-color: rgb(154, 255, 255);
+
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 3.5vw;
 }
 
 .advertisewrap {
     position: relative;
-    width: 38%;
-    background-color: rgb(218, 178, 255);
+    width: 39%;
     border: 2px solid #FFDF6C;
     border-radius: 8px;
+    padding-bottom: 5px;
+    align-self: start;
+}
+
+.advertisewrap .adCard {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px 12px 0px;
+    margin: 0px 1.5vw;
+
+}
+
+.advertisewrap .adCard:not(:last-child) {
+    border-bottom: 1px dashed rgb(82, 82, 82);
 }
 
 .advertisewrap .adCardPic {
-    width: 45%;
+    width: 50%;
     aspect-ratio: 1 / 1;
     overflow: hidden;
 }
 
 .advertisewrap .adCardDes {
-    width: 50%;
-    background-color: aqua;
+    width: 49%;
+
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 13px;
 }
 
 .advertisewrap .adCardDes h4 {
-    font-size: 22px;
+    font-size: 21px;
 
 }
 
 .advertisewrap .giveBonus {
-    font-size: 20px;
+    position: relative;
+    font-size: 19px;
+    letter-spacing: 2px;
     background-color: #B73030;
     color: white;
-    width: 80%;
-    padding: 10px 15px;
+    width: 110px;
+    padding: 10px 20px;
+    border-radius: 6px 6px 3px 3px;
+    text-align: center;
 }
+
+.advertisewrap .giveBonus::after {
+    content: '';
+    position: absolute;
+    display: block;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid #B73030;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 0;
+    height: 0;
+}
+
+
+.advertisewrap .adCardDes a {
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 19px;
+    display: block;
+    background-color: #FFCD19;
+    width: 105px;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.advertisewrap .adCardDes a::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 0px;
+
+    display: block;
+    border-left: 10px solid #FFCD19;
+    border-top: 17.5px solid transparent;
+    border-bottom: 17.5px solid transparent;
+    width: 0;
+
+}
+
 
 .advertisewrap .thumbtack {
     position: absolute;
@@ -62,6 +127,7 @@ main {
     display: block;
     width: 18px;
     height: 19px;
+    transform: rotate(58deg);
 
 }
 
@@ -81,16 +147,79 @@ main {
 
 /* 會員登入區塊end */
 
-.memberLoginWrap {
-    width: 56.25%;
-    background-color: aquamarine;
+.memberWrap {
+    width: 58%;
+    display: flex;
+    padding-top: 100px;
+
 }
 
-.advertisewrap .adCard {
+.memberWrap form {
+    width: 100%;
+}
+
+.memberWrap .writeTextWrap {
     display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px 0px;
-    margin: 0px 15px;
-    border-bottom: 1px dashed rgb(82, 82, 82);
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.memberWrap label {
+
+    font-size: 24px;
+    color: #482700;
+}
+
+.memberWrap div input.writeText {
+    width: 100%;
+    min-height: 45px;
+    border: none;
+    border-bottom: 2px solid #bc6500;
+    outline: none;
+    font-size: 22px;
+}
+
+.memberWrap div input::placeholder {
+    font-size: 20px;
+    color: rgb(171, 171, 171);
+}
+
+.memberWrap .forgetPw a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 5px 0px 6px 0px;
+    border-bottom: 1.5px solid black;
+}
+
+.memberWrap button {
+    display: block;
+    border: none;
+    width: 50%;
+    min-width: 160px;
+    padding: 12px 20px;
+    letter-spacing: 1.5px;
+    background-color: #F88400;
+    color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 26px;
+    letter-spacing: 5px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+
+}
+
+.memberWrap .register {
+    text-align: center;
+}
+
+.memberWrap .register a {
+
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
 }
