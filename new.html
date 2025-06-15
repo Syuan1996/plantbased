@@ -263,6 +263,10 @@
                 const script = document.createElement('script');
                 script.src = 'js/common/menu.js';
                 document.body.appendChild(script);
+
+                const script2 = document.createElement('script');
+                script2.src = 'js/common/marquee.js';
+                document.body.appendChild(script2);
             })
             .catch(err => {
                 console.error('載入 header 失敗:', err);
