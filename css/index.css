@@ -66,6 +66,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 70px;
+  border-radius: 5px;
 }
 
 .bannerControls {
@@ -150,7 +151,7 @@
   transform: scale(1.15);
 }
 
-/* 自定義輪播圖放大小果 */
+/* 自定義輪播圖放大效果 */
 .bannerSlider .swiper-slide img {
   object-fit: cover;
   transform: scale(1);
@@ -316,6 +317,8 @@
 }
 
 @media (max-width: 920px) {
+
+
   .bannerSlider {
     flex-direction: column;
     background-color: #ffd84b;
@@ -323,8 +326,10 @@
   }
 
   .swiper-wrapper {
+    aspect-ratio: 1424 / 850;
     width: 100%;
-    height: auto;
+    overflow: hidden;
+
     /* border-radius: 0px 0px 80px 0px; */
 
     overflow: hidden;
@@ -333,8 +338,8 @@
   .swiper-wrapper .swiper-slide img {
     max-width: 100%;
     /* border-radius: 0px 0px 80px 0px; */
-
-    height: auto;
+    height: 100%;
+    object-fit: cover;
   }
 
   .bannerContent {
@@ -702,9 +707,9 @@
 
 .applePattern {
   position: absolute;
-  top: 5vw;
-  left: -3vw;
-  max-width: 280px;
+  top: 4.5vw;
+  left: -2vw;
+  max-width: 255px;
   width: 28vw;
 }
 
