@@ -13,12 +13,12 @@
 
 .newsContentTag {
     width: 23%;
-    display: flex;
-    flex-direction: column;
+
+
 }
 
 .newsContentItems {
-    width: 69%;
+    width: 75%;
 
 }
 
@@ -28,6 +28,7 @@
 
     width: 100%;
     margin-bottom: 7%;
+
 }
 
 .newsContentItem.hidden {
@@ -42,16 +43,19 @@
     width: 42%;
 
     overflow: hidden;
-    background-color: #FFAFAF;
+
 }
 
 .newsCoverDes {
     width: 58%;
+
 }
+
 
 .newsCoverDes h3 {
     font-weight: 500;
     padding-bottom: 5px;
+    line-height: 1.4;
 }
 
 .newsCoverPic img {
@@ -64,80 +68,99 @@
 
 .newsContentTag button {
     cursor: pointer;
-    font-size: 18px;
-    width: 85px;
-    height: 28px;
+    font-size: 25px;
+    width: 210px;
+    padding: 10px 10px;
     white-space: nowrap;
     border: none;
-    margin-bottom: 6px;
-    padding-bottom: 2px;
+    border-left: 2px solid #E27900;
+    border-right: 2px solid #E27900;
 }
 
 .newsContentTag button:not(:first-child) {
-    border-bottom: 1.5px solid #E04242;
+    border-bottom: 2px solid #E27900;
     background-color: white;
+    position: relative;
 
+}
+
+
+.newsContentTag button.newsAll {
+    border: 2px solid #E27900;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .newsContentTag button:first-child {
-    background-color: #fed6d6;
-    color: rgb(0, 0, 0);
+    background-color: white;
+    border-bottom: 2px solid #E27900;
+}
+
+.newsContentTag button:last-child {
+    border-bottom: 4px solid #E27900;
 }
 
 .newsContentTag button.active {
-    background-color: #E04242;
+    background-color: #E27900;
     color: white;
     border-bottom: none;
 }
 
+
+
 /* 最新消息文字內容大小細節調整start */
 .newsSmallTag {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 3%;
+    text-align: right;
+    margin-bottom: 5%;
 }
 
-.PromotionTag {
-    text-align: center;
-    width: 80px;
-    line-height: 26px;
-    height: 26px;
-    border: 1px solid #000;
-    border-radius: 5px;
-}
 
 .newsCoverDes {
+    position: relative;
     padding-left: 3.5%;
+    border-bottom: 1px dotted #E27900;
+}
+
+.newsCoverDes::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    background-color: #e27800bd;
+    right: 0px;
+    bottom: -2.5px;
+    border-radius: 50%;
+
 }
 
 
 .newsCoverDes h3 {
     font-size: 20px;
     margin-bottom: 2.5%;
+    color: #1d1000;
 }
 
 .newsCoverDes p {
     font-size: 18px;
-    margin-bottom: 5%;
     line-height: 1.5;
-
+    margin-bottom: 25px;
 }
 
 
 .newsCoverDes .detailButton a {
     display: flex;
-    gap: 6px;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #000;
-    width: 95px;
-    height: 30px;
-    line-height: 28px;
-    background-color: #FFAFAF;
+    width: 120px;
+    line-height: 35px;
+    background-color: #E27900;
     margin-left: auto;
-
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
 }
 
 
@@ -148,28 +171,170 @@
 .pagination {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 15px;
     margin-bottom: 20px;
 
 }
 
 .pagination span {
+    display: block;
     font-weight: 600;
-    color: #C40505;
-    min-width: 28px;
+    color: #ce6e00;
+    min-width: 35px;
     padding: 0 5px;
-    height: 28px;
-    border: 1px solid #C40505;
+    height: 35px;
+    border: 1px solid #ce6e00;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    border-radius: 30%;
+    font-size: 18px;
 }
 
 .pagination .active {
-    background-color: #C40505;
+    background-color: #ce6e00;
     color: white;
 }
 
 
 /* 最新消息-頁尾區塊end */
+
+/* 開始下斷點平板到手機start */
+
+@media screen and (max-width:1199px) {
+    .newsContent {
+        flex-direction: column;
+    }
+
+    .newsContentTag {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 55px;
+        gap: 20px;
+        padding-left: 4.8vw;
+    }
+
+    .newsContentTag .newOtherTag {
+        display: flex;
+        gap: 20px;
+    }
+
+    .newsContentTag button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 140px;
+        height: 40px;
+        font-size: 24px;
+        border: 2px solid #E27900;
+        border-radius: 5px;
+
+    }
+
+    .newsContentTag button:not(:first-child) {
+        border-bottom: 2px solid #E27900;
+        background-color: white;
+        position: relative;
+
+    }
+
+    .newsContentTag button.active {
+        background-color: #E27900;
+        color: white;
+        border-bottom: none;
+    }
+
+    .newsContentTag button:first-child {
+
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    /* 寫下半部的消息內容區start */
+    .newsContentItems {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    /* 寫下半部的消息內容區end */
+
+}
+
+@media screen and (max-width:1000px) {
+
+    .newsContentTag {
+        display: flex;
+        flex-direction: row;
+
+        padding-left: 1vw;
+    }
+
+
+    .newsCoverPic {
+        aspect-ratio: 340 / 400;
+        align-self: start;
+        width: 32%;
+
+        overflow: hidden;
+
+    }
+
+    .newsCoverDes {
+        width: 68%;
+    }
+
+    .newsContentItems {
+
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    .newsContentItem {
+        display: block;
+    }
+
+    .newsContentTag {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+
+
+    .newsCoverPic {
+        aspect-ratio: 340 / 250;
+        align-self: start;
+        width: 95%;
+
+        overflow: hidden;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .newsCoverDes {
+        width: 95%;
+        padding-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+
+@media screen and (max-width:680px) {
+    .newsContentTag button {
+        width: 42%;
+        font-size: 22px;
+
+    }
+}
+
+/* 開始下斷點平板到手機end */

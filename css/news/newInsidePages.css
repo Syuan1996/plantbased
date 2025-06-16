@@ -10,6 +10,7 @@
 }
 
 .newsContentInsideDate {
+    padding-left: 15px;
     font-size: 20px;
     color: #A00101;
     display: block;
@@ -17,6 +18,8 @@
 }
 
 .newsContentInside h2 {
+    padding-left: 15px;
+    line-height: 1.4;
     font-size: 30px;
     padding-bottom: 17px;
     border-bottom: 2px solid #A00101;

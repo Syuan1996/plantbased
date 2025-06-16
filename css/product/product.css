@@ -33,35 +33,31 @@
 @media (max-width:787px) {
 
     .productContentCatag {
-        margin-bottom: 15px;
-        flex-direction: column;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
+        margin-bottom: 25px;
+
+
     }
 
     .productContentCatag button {
-        margin-right: 10px;
-        margin-bottom: 20px;
-        min-width: 120px;
+        min-width: 0px;
+        margin-right: 0px;
+        width: 42%;
         line-height: 38px;
         font-size: 22px;
     }
 
-    .productContentCatag button:first-child {}
+
 
 }
 
 @media (max-width:375px) {
 
-    .productContentCatag {
-        margin-bottom: 25px;
-        text-align: center;
-    }
-
     .productContentCatag button {
-
-        margin-bottom: 20px;
         font-size: 18px;
-
 
     }
 }
