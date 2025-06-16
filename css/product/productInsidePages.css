@@ -1,12 +1,13 @@
 .productInside {
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .productInsideTop {
     display: flex;
-    padding-bottom: 6%;
+    padding-bottom: 5%;
     border-bottom: 1px dashed black;
+    margin-bottom: 20px;
 }
 
 .productInsideTopLeft {
@@ -232,14 +233,15 @@
 
 /* 下方其他詳細介紹start */
 
+
+
 .productInsideBottomPic {
     text-align: center;
-    padding-top: 5%;
-    margin-bottom: 3%;
+    padding-top: 3%;
+
 }
 
 .productInsideBottom p {
-    max-width: 996px;
     margin: 0 auto;
     font-size: 18px;
     line-height: 30px;
