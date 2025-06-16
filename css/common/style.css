@@ -346,7 +346,7 @@ h1 {
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(157deg) brightness(112%) contrast(101%);
     height: 100%;
     display: block;
-    padding: 20px 20px;
+    padding: 20px 20px 15px 20px;
 
   }
 
@@ -360,6 +360,7 @@ h1 {
     text-align: center;
 
     background-color: #ffffff;
+    box-shadow: none;
 
 
   }
@@ -639,8 +640,9 @@ footer {
 
 @media screen and (max-width:1750px) {
   .grapeFruitFt {
-    width: 120px;
-    bottom: 120px;
+    width: 140px;
+    bottom: 90px;
+    left: 1.6vw;
   }
 
   .grapeFruitFt img {
@@ -658,7 +660,7 @@ footer {
 }
 
 
-@media screen and (max-width:1350px) {
+@media screen and (max-width:1440px) {
   .grapeFruitFt {
     display: none;
   }

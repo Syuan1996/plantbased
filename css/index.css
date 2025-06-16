@@ -563,7 +563,7 @@
     display: block;
     width: 23vw;
     position: absolute;
-    top: 155vw;
+    top: 160vw;
     left: -5.5vw;
     z-index: -1;
     max-width: 300px;
@@ -588,12 +588,6 @@
     max-width: 240px;
   }
 
-
-}
-
-@media screen and (max-width:767px) {
-
-
   .indexProduct1,
   .indexProduct2 {
     width: calc((100% - 3.5%)/2);
@@ -601,16 +595,17 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 3%;
+    margin-bottom: 4.5%;
   }
 
   .indexProduct3 {
     /* 第三個調成大比例 */
     width: 100%;
+    margin-bottom: 20px;
   }
+
+
 }
-
-
 
 /* 區塊一/商品類別 end */
 
@@ -702,10 +697,14 @@
   text-decoration: none;
   color: #fff;
   background-color: #da5656;
-
-  padding: 12px 33px;
+  line-height: 45px;
+  width: 150px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
   display: inline-block;
   vertical-align: bottom;
+
 }
 
 
@@ -717,9 +716,21 @@
   width: 28vw;
 }
 
+@media screen and (max-width:1023px) {
+  .applePattern {
+    top: 5.5vw;
+    max-width: 235px;
+    width: 25vw;
+  }
+}
 
 
 @media screen and (max-width:767px) {
+
+  .indexNewsWrap {
+    margin-bottom: 30px;
+  }
+
   .applePattern {
     position: static;
     margin: 0 auto;
@@ -737,6 +748,7 @@
   .indexNewsLeft h4 {
 
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .indexNews {
@@ -857,10 +869,15 @@
 }
 
 .indexBrandMore a {
-  color: black;
+  color: rgb(255, 255, 255);
   background-color: #f88400;
   text-decoration: none;
-  padding: 12px 33px;
+  line-height: 45px;
+  width: 150px;
+  font-size: 18px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
 }
 
 /* 漂浮裝飾icon */
@@ -903,28 +920,11 @@
 
 @media screen and (max-width:1440px) {
 
-  /* 漂浮裝飾icon */
-  .orangeIcon {
-    width: 12vw;
-    position: absolute;
-    right: 4vw;
-    top: 25vw;
-  }
-
-  /* 漂浮裝飾icon */
-}
-
-@media screen and (max-width:1440px) {
-
   .indexBrandWrap {
     padding-top: 1vw;
   }
 
   /* 漂浮裝飾icon */
-  .bolbYellowLeft {
-    display: none;
-  }
-
   .orangeIcon {
     width: 13vw;
     position: absolute;
@@ -944,20 +944,35 @@
     width: 13vw;
     position: absolute;
     right: 4vw;
-    top: 29vw;
+    top: 66%;
   }
 
   /* 漂浮裝飾icon */
-}
 
-@media screen and (max-width:960px) {
-  .orangeIcon {
-    width: 12vw;
-    right: 4vw;
-    top: 35vw;
+  .bolbYellowLeft {
+    width: 20vw;
+    left: -8.5vw;
+    top: 5vw;
+    position: absolute;
   }
 }
 
+@media screen and (max-width:1023px) {
+
+  /* 漂浮裝飾icon */
+  .orangeIcon {
+    display: none;
+  }
+
+  /* 漂浮裝飾icon */
+
+  .indexBrandMore {
+
+    text-align: right;
+
+
+  }
+}
 
 @media screen and (max-width:1000px) {
   .indexBrandItro {
@@ -977,47 +992,65 @@
     padding-right: 0vw;
   }
 
-}
-
-@media screen and (max-width:860px) {
-
-
-  /* 漂浮裝飾icon */
-  .orangeIcon {
-    width: 12vw;
-    right: 2vw;
-    top: 39vw;
+  .bolbYellowLeft {
+    width: 20vw;
+    left: -8.5vw;
+    top: 65px;
+    position: absolute;
   }
+
 }
 
 
-@media screen and (max-width:790px) {
+@media screen and (max-width:960px) {
 
-
-  /* 漂浮裝飾icon */
-  .orangeIcon {
-    width: 12vw;
-    right: 2vw;
-    top: 43vw;
+  .bolbYellowLeft {
+    width: 20vw;
+    left: -8.5vw;
+    top: 80px;
+    position: absolute;
   }
-}
 
+}
 
 
 @media screen and (max-width:767px) {
 
+  .indexBrandWrap {
+    margin-bottom: 50px;
+  }
+
+  .indexBrandMore {
+
+    text-align: center;
+    transform: translateY(10px);
+
+  }
 
   /* 漂浮裝飾icon */
-  .orangeIcon {
-    display: none;
+
+  .bolbYellowLeft {
+    width: 32vw;
+    left: -9vw;
+    top: 101%;
+    position: absolute;
+    transform: rotate(30deg);
+    z-index: -1;
   }
 
   .indexBrandWrap h4 {
     text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .indexBrandRight h5 {
+    text-align: center;
+    margin-bottom: 14px;
   }
 
   .indexBrandItro {
     flex-direction: column;
+    gap: 5px;
 
   }
 
@@ -1037,6 +1070,16 @@
     right: -11px;
 
   }
+
+  .indexBrandRight p:first-of-type {
+    margin-bottom: 12px;
+  }
+
+  .indexBrandRight p:last-of-type {
+    margin-bottom: 18px;
+  }
+
+
 
 }
 
@@ -1100,10 +1143,24 @@
 
 }
 
+@media screen and (max-width:1023px) {
+  .indexHotItemsWrap {
+    margin-bottom: 50px;
+  }
+}
+
 @media screen and (max-width:767px) {
+  .indexHotItemsWrap {
+    margin-bottom: 35px;
+  }
+
   .indexHotItem {
     width: 48%;
     margin-bottom: 3vw;
+  }
+
+  .indexHotItemsWrap h4 {
+    margin-bottom: 25px;
   }
 }
 
