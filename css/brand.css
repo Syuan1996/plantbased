@@ -1,5 +1,5 @@
 main {
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 main section {
@@ -12,7 +12,7 @@ main section {
 .brandContent {
     display: flex;
 
-    gap: 8.333333%;
+    gap: 7%;
 
 }
 
@@ -21,7 +21,7 @@ main section {
 }
 
 .brandContent:nth-child(2) {
-    margin-bottom: 100px;
+    margin-bottom: 95px;
 }
 
 .brandContent:nth-child(2) .brandContentDes {
@@ -29,8 +29,8 @@ main section {
 }
 
 .brandContentDes {
-    padding-top: 8.333333%;
-    width: 37%;
+    padding-top: 6.5%;
+    width: 39%;
 }
 
 .brandContentDes h3 {
@@ -71,6 +71,64 @@ main section {
     /* 消除圖片下方空隙 */
 }
 
+@media screen and (max-width:1023px) {
+    .brandContent {
+        justify-content: space-between;
+        gap: 3.5%;
+
+    }
+
+    .brandContentDes {
+        width: 50%;
+    }
+
+    .brandContent .brandContentDes {
+        margin-top: -30px;
+    }
+
+    .brandContentDes h3 {
+        font-size: 28px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .brandContent {
+        flex-direction: column;
+    }
+
+
+    .brandContentDes {
+
+        width: 100%;
+    }
+
+    .brandContentDesImg1 {
+        width: 100%
+    }
+
+    .brandContentDesimg2 {
+        width: 100%
+    }
+
+    .brandContentDesimg2 {
+        order: 1;
+    }
+
+
+    .brandContent .brandContentDes {
+        margin-bottom: 20px;
+    }
+
+    .brandContentDes h3 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+
+
+}
+
 /* 1.brandContent 區塊end*/
 
 /* 2.brandIcons 區塊start*/
@@ -79,7 +137,7 @@ main section {
     display: flex;
     padding: 0 3%;
     justify-content: space-between;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
 
 }
 
@@ -173,6 +231,57 @@ main section {
 
 .brandIcon p {
     font-size: 18px;
+    line-height: 1.4;
+}
+
+@media screen and (max-width:1023px) {
+    .brandIcons {
+        display: flex;
+        padding: 0 10px;
+        margin-bottom: 7%;
+    }
+
+    .brandIcon {
+        width: 19.5%;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .brandIcons {
+        display: flex;
+        flex-wrap: wrap;
+
+        margin-bottom: 35px;
+    }
+
+    .brandIcon {
+        width: 100%;
+        display: flex;
+        gap: 9%;
+        margin-bottom: 25px;
+
+    }
+
+    .brandIcon h4 {
+        text-align: left;
+    }
+
+    .brandIcon h4::after {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .brandIconContent {
+
+        margin-top: 20px;
+    }
+
+    .brandContent:nth-child(2) {
+        margin-bottom: 75px;
+    }
+
+
 }
 
 
@@ -194,11 +303,11 @@ main section {
         "potato okra dpg banana smp smp"
         "peach peach dpg banana kiwi oranges"
         "peach peach mushroom banana kiwi tomatos"
-
     ;
 
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
+
 
 .collage img {
     width: 100%;
@@ -257,11 +366,89 @@ main section {
     grid-area: tomatos;
 }
 
+.collage {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
 
 
+.collage h5 {
+    font-size: 18px;
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 6px 2px;
+    line-height: 1.4;
+    transition: bottom ease-in-out 0.3s;
+
+}
+
+.collage:hover h5 {
+    bottom: 0%;
+
+}
+
+@media (max-width:1023px) {
+
+    .brandContentcollage {
+
+        width: 100%;
+
+        aspect-ratio: 1200/ 900;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2%;
+        row-gap: 2%;
+        grid-template-rows: repeat(7, 17.5%);
+
+        grid-template-areas:
+            "apple apple oranges okra"
+            "potato tomatos tomatos okra"
+            "peach peach smp smp"
+            "peach peach smp smp"
+            "mushroom kiwi kiwi redradish"
+            "dpg dpg banana banana"
+            "dpg dpg banana banana"
+
+        ;
+
+        margin-bottom: 40vw;
+    }
 
 
+    .collage h5 {
+        bottom: 0%;
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .brandContentcollage {
+        display: block;
+        margin-bottom: 50px;
+
+    }
+
+    .brandContentcollage .collage {
+        display: none;
+    }
 
 
+    .brandContentcollage .collage.fruitPhone,
+    .brandContentcollage .collage.vegPhone,
+    .brandContentcollage .collage.allPhone {
+        display: block;
+        aspect-ratio: 4/3;
+        margin-bottom: 20px;
+    }
+
+}
 
 /* 3.brandContentcollage 區塊end*/
