@@ -207,7 +207,7 @@ main section {
 .brandIcon h4::after {
     content: '';
     max-width: 121px;
-    padding-top: 2.5%;
+    padding-top: 9px;
     margin: 0 auto;
     display: block;
     border-bottom: 2px solid #000;
@@ -255,6 +255,20 @@ main section {
         margin-bottom: 35px;
     }
 
+    .brandIconBg {
+        margin: 0 auto;
+
+        flex-shrink: 0;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 7%;
+        margin-top: 10px;
+    }
+
     .brandIcon {
         width: 100%;
         display: flex;
@@ -279,6 +293,24 @@ main section {
 
     .brandContent:nth-child(2) {
         margin-bottom: 75px;
+    }
+
+
+}
+
+@media screen and (max-width:375px) {
+
+    .brandIcon {
+        width: 90%;
+        display: block;
+
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .brandIcon h4 {
+        text-align: center;
+
     }
 
 
