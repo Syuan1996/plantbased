@@ -157,7 +157,85 @@ main {
 
 .messageForm input::placeholder {
     font-size: 20px;
-    color: rgb(171, 171, 171);
+    color: rgb(202, 202, 202);
 }
 
 /*  mainMessageFormd-end*/
+
+@media screen and (max-width:1023px) {
+    .messageWrap {
+        flex-direction: column;
+
+    }
+
+    .messageLeftPic {
+        display: none;
+    }
+
+    .messageWrap section {
+        width: 65%;
+        margin: 0 auto;
+
+    }
+
+    .messageLeft p {
+        border: none;
+        text-align: center;
+        margin-bottom: 30px;
+        background-color: #ffe0bb;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 18px;
+
+    }
+
+    .messageWrap {
+        margin-bottom: 70px;
+
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    .messageWrap section {
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    .messageLeft p {
+        text-align: left;
+        padding: 5px 15px;
+
+    }
+
+
+    .messageFormItem label,
+    .messageGenderTitle {
+        font-size: 22px;
+
+    }
+
+
+    .messageForm button {
+
+        font-size: 24px;
+        padding: 10px 10px;
+
+    }
+
+    .messageWrap {
+        margin-bottom: 50px;
+
+    }
+
+}
+
+@media screen and (max-width:400px) {
+
+    .messageWrap section {
+        width: 95%;
+
+    }
+}
