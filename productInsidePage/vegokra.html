@@ -67,16 +67,20 @@
                     </div>
 
                     <div class="priceNum">
-                        <div class="price">價格<span class="Digits">250</span>元</div>
+                        <div class="price"><span class="priceTitle">價格</span><span class="Digits">250</span>元</div>
 
-                        <div class="num">
-                            <span class="buynum">購買數量</span>
-                            <div class="numControl">
-                                <button class="reduce"><img src="../img/product/productInside/reduce.svg"
-                                        alt=""></button>
-                                <input class="nowNumber" type="text" value="10">
-                                <button class="add"><img src="../img/product/productInside/add.svg" alt=""></button>
+                        <div class="buyNumStorge">
+                            <div class="num">
+                                <span class="buynum">購買數量</span>
+                                <div class="numControl">
+                                    <button class="reduce"><img src="../img/product/productInside/reduce.svg"
+                                            alt=""></button>
+                                    <input class="nowNumber" type="text" value="" data-stock="15">
+                                    <button class="add"><img src="../img/product/productInside/add.svg" alt=""></button>
+                                </div>
                             </div>
+                            <p class="stockNotice"></p>
+
                         </div>
 
                     </div>
@@ -122,6 +126,10 @@
                 const script2 = document.createElement('script');
                 script2.src = '../js/common/marquee.js';
                 document.body.appendChild(script2);
+
+                const script3 = document.createElement('script');
+                script3.src = '../js/common/cart.js';
+                document.body.appendChild(script3);
             })
             .catch(err => {
                 console.error('載入 header 失敗:', err);

@@ -129,9 +129,10 @@
 
 
 .shopItemWrap tbody td:first-child div {
-    min-width: 160px;
+    min-width: 150px;
     width: 40.8%;
     aspect-ratio: 1 / 1;
+    flex-shrink: 0;
 }
 
 .shopItemWrap tbody td:first-child div img {
@@ -179,7 +180,7 @@
 }
 
 .shopInfoWrap fieldset {
-    margin-bottom: 15px;
+    margin-bottom: 45px;
 }
 
 .shopInfoWrap fieldset legend {
@@ -253,9 +254,7 @@
 /* 宅配的地址選擇start */
 
 .deliveryAddress {
-    pointer-events: none;
-    opacity: 0;
-    height: 0;
+
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -286,6 +285,10 @@
 /* 宅配的地址選擇end */
 
 /* famSevWrap超商的選擇全家或小七start */
+
+.famSevWrap {
+    display: none;
+}
 
 .famSevWrap div {
 
@@ -383,12 +386,12 @@
     align-items: center;
 }
 
-.cardInfo label {
-    width: 160px;
+.cardNumWrap label {
+    min-width: 160px;
 }
 
 .cardInfo .cardNumWrap input {
-    width: 15%;
+    width: 17%;
     margin-right: 15px;
 }
 
@@ -433,6 +436,10 @@
 
 /* 發票類型 start*/
 
+.companyInvoiceWrite {
+    display: none;
+}
+
 .invoiceWrap {
     display: flex;
     gap: 15px;
@@ -451,7 +458,7 @@
 }
 
 .phoneInvoiceWrite,
-.phoneInvoiceWrite {
+.companyInvoiceWrite {
     width: 52.5%;
     margin-bottom: 15px;
     margin-left: 15px;
@@ -492,3 +499,296 @@
 
 /* 確認結帳送出按鈕end */
 /* 第二區section-shopItemWrap-end*/
+
+/* js的shopCart頁面中的空購物車提醒 */
+
+.emptyMessage {
+    display: table-cell !important;
+    text-align: center;
+    color: #939393;
+}
+
+/* 表格產品列切版rwd start */
+
+@media screen and (max-width:840px) {
+
+    .shopCartWrap {
+        padding: 0 20px;
+    }
+
+    thead {
+        display: none;
+    }
+
+    .shopItemWrap tbody .shopNumWrap {
+        margin: 0 0 0 auto;
+    }
+
+    .shopItemWrap tbody tr {
+        display: block;
+        position: relative;
+        border-top: 1px solid #f15d00;
+        border-bottom: none;
+    }
+
+
+    tbody tr td {
+        display: block;
+        width: 100%;
+
+
+    }
+
+    tbody tr td:not(:last-child) {
+        border-bottom: 1px dotted black;
+
+
+    }
+
+    .shopItemWrap .subtotalWrap {
+        display: block;
+        text-align: right;
+    }
+
+    .subtotalWrap img.delete {
+        position: absolute;
+        top: 20px;
+
+        right: 15px;
+
+        cursor: pointer;
+    }
+
+    .shopItemWrap tbody tr td:nth-child(2) {
+        text-align: right;
+    }
+
+    tbody tr td[data-label]::before {
+        content: attr(data-label);
+        float: left;
+
+    }
+
+    .shopItemWrap tbody tr td:last-child {
+        padding-left: 0%;
+    }
+
+
+    tfoot tr {
+        display: block;
+    }
+
+    tfoot tr td {
+        display: block;
+    }
+
+
+
+}
+
+@media screen and (max-width:400px) {
+    .shopItemWrap tbody td:first-child h3 {
+        line-height: 1.3;
+        font-size: 24px;
+    }
+
+}
+
+/* 表格產品列切版rwd end */
+
+/* 下半部內容切版start */
+
+@media screen and (max-width:840px) {
+
+    .shopInfoWrap .recipientWrap div {
+        width: 95%;
+    }
+
+    .deliveryAddress input {
+        width: 92%;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .shopInfoWrap .recipientWrap div {
+        width: 100%;
+    }
+
+    .deliveryAddress input {
+        width: 100%;
+    }
+
+    .cardInfo .cardNumWrap,
+    .cardDateWrap,
+    .cardCvcWrap {
+        flex-wrap: wrap;
+    }
+
+    .cardNumWrap label {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cardInfo .cardInputWrap {
+        display: flex;
+        gap: 12px;
+    }
+
+    .cardInfo .cardNumWrap input {
+        width: 23%;
+        margin-right: 0px;
+    }
+
+    .cardDateCvcWrap {
+        width: 96.6%;
+        justify-content: start;
+
+    }
+
+    .cardDateCvcWrap .cardDateWrap label {
+        width: 135px;
+    }
+
+    /* 以下是超商手機斷點內容 start*/
+
+    .famSevWrap div {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .famSevWrap input[type="text"] {
+        width: 100%;
+    }
+
+    /* 以下是超商手機斷點內容 end*/
+
+    /* 以下是發票start */
+
+    .invoiceWrap {
+        flex-wrap: wrap;
+
+    }
+
+    .phoneInvoiceWrite,
+    .companyInvoiceWrite {
+        width: 95%;
+
+    }
+
+    .phoneInvoiceWrite::placeholder {
+        font-size: 22px;
+    }
+
+    .companyInvoiceWrite::placeholder {
+        font-size: 22px;
+    }
+
+    .shopInfoWrap fieldset {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width:560px) {
+
+    .deliveryAddress input::placeholder {
+        font-size: 22px;
+    }
+
+    .cardDateCvcWrap {
+        width: 100%;
+        flex-wrap: wrap;
+
+
+    }
+
+    .cardDateCvcWrap div:first-child {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cardDateCvcWrap .cardDateWrap input {
+        width: calc(100% - 135px);
+    }
+
+    .cardDateCvcWrap div:last-child {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:520px) {
+
+    .shopInfoWrap .recipientWrap div {
+
+        display: block;
+        width: 100%;
+    }
+
+    .shopInfoWrap .recipientWrap label {
+        display: block;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .shopInfoWrap .recipientWrap input {
+
+        width: 100%;
+    }
+
+
+
+    .paymentMethodWrap {
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+
+    .deliveryAddress input::placeholder {
+        font-size: 18px;
+    }
+
+    .shopInfoWrap .recipientWrap div {
+        width: 100%;
+    }
+
+    .deliveryAddress input {
+        width: 100%;
+
+    }
+
+    .cardInfo .cardInputWrap {
+        display: flex;
+        gap: 7px;
+    }
+
+    .cardInfo .cardNumWrap input {
+        width: 25%;
+        padding-left: 4px;
+
+    }
+
+    /* 以下是超商手機斷點內容 start*/
+
+    .famSevWrap button {
+        margin-left: 34px;
+    }
+
+
+    /* 以下是超商手機斷點內容 end*/
+
+    /* 以下是發票類型start */
+
+    .phoneInvoiceWrite::placeholder {
+        font-size: 18px;
+    }
+
+    .companyInvoiceWrite::placeholder {
+        font-size: 18px;
+    }
+}
+
+/* 下半部內容切版end */

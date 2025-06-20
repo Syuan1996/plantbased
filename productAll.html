@@ -294,6 +294,10 @@
                 script2.src = 'js/common/marquee.js';
                 document.body.appendChild(script2);
 
+                const script3 = document.createElement('script');
+                script3.src = 'js/common/cart.js';
+                document.body.appendChild(script3);
+
             })
             .catch(err => {
                 console.error('載入 header 失敗:', err);

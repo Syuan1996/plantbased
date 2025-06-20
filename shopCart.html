@@ -168,7 +168,7 @@
 
                     <div class="deliveryMethod">
                         <div class="homeDeliveryWrap">
-                            <input type="radio" name="Delivery" id="homeDelivery">
+                            <input type="radio" name="Delivery" id="homeDelivery" checked>
                             <label for="homeDelivery">宅配</label>
                         </div>
                         <div class="superMarketWrap">
@@ -185,7 +185,7 @@
                         <select name="" id="townSelect" class="townSelect">
                             <option value="">選擇鄉鎮區</option>
                         </select>
-                        <input type="text" placeholder="詳填收件其餘地址(路名、門牌號)...">
+                        <input type="text" placeholder="詳填收件路名、門牌號碼...">
                     </div>
 
                     <div class="famSevWrap">
@@ -209,7 +209,7 @@
 
                     <div class="paymentMethodWrap">
                         <div class="creditCardWrap">
-                            <input type="radio" name="Payment" id="creditCard">
+                            <input type="radio" name="Payment" id="creditCard" checked>
                             <label for="creditCard">信用卡付款</label>
                         </div>
 
@@ -229,10 +229,12 @@
                     <div class="cardInfo">
                         <div class="cardNumWrap">
                             <label>信用卡卡號:</label>
-                            <input type="text" class="cardNumInput">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
+                            <div class="cardInputWrap">
+                                <input type="text" class="cardNumInput">
+                                <input type="text">
+                                <input type="text">
+                                <input type="text">
+                            </div>
                         </div>
 
                         <div class="cardDateCvcWrap">
@@ -254,7 +256,7 @@
                     <legend>發票類型</legend>
                     <div class="invoiceWrap">
                         <div class="phoneInvoiceWrap">
-                            <input type="radio" id="phoneInvoice" name="InvoiceType">
+                            <input type="radio" id="phoneInvoice" name="InvoiceType" checked>
                             <label for="phoneInvoice">手機載具</label>
                         </div>
 
@@ -278,7 +280,7 @@
 
                     <input type="text" placeholder="請輸入載具例如 /BRDF26Y" class="phoneInvoiceWrite">
 
-                    <!-- <input type="text" placeholder="請輸入公司統一編號" class="phoneInvoiceWrite"> -->
+                    <input type="text" placeholder="請輸入公司統一編號" class="companyInvoiceWrite">
 
                 </fieldset>
 
@@ -310,6 +312,10 @@
                 const script2 = document.createElement('script');
                 script2.src = 'js/common/marquee.js';
                 document.body.appendChild(script2);
+
+                const script3 = document.createElement('script');
+                script3.src = 'js/common/cart.js';
+                document.body.appendChild(script3);
             })
             .catch(err => {
                 console.error('載入 header 失敗:', err);
@@ -329,6 +335,7 @@
             });
     </script>
 
+    <script src="js/shopcart.js"></script>
 </body>
 
 </html>
