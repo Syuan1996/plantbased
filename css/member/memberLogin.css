@@ -223,3 +223,67 @@ main {
     border-bottom: 1px solid black;
     padding-bottom: 5px;
 }
+
+@media screen and (max-width:767px) {
+
+    .advertiseLogin {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .memberWrap {
+        padding-top: 15px;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .advertisewrap {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .advertisewrap .adCard {
+        gap: 50px;
+        padding-left: 10%;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .memberWrap {
+        width: 95%;
+
+        margin-bottom: 15px;
+    }
+
+    .advertisewrap {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .advertisewrap .adCard {
+        gap: 50px;
+        padding-left: 10%;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .memberWrap {
+        width: 97%;
+
+        margin-bottom: 15px;
+    }
+
+    .advertisewrap {
+        width: 99%;
+        margin: 0 auto;
+    }
+
+    .advertisewrap .adCard {
+        gap: 7%;
+        padding-left: 3.5%;
+    }
+
+}
