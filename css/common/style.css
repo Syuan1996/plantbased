@@ -633,6 +633,32 @@ h1 {
 
 }
 
+@media screen and (max-width:580px) {
+
+  .hotSearch {
+    flex-wrap: wrap;
+    row-gap: 22px;
+  }
+
+  .hotSearch li:last-child {
+    padding-left: 35px;
+  }
+
+}
+
+@media screen and (max-width:430px) {
+  .hotSearch li:last-child {
+    padding-left: 0px;
+  }
+
+  .hotSearch input::placeholder {
+    font-size: 18px;
+  }
+
+}
+
+
+
 /* 搜尋彈窗end */
 
 /* 頁尾start */
