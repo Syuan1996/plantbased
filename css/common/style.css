@@ -242,6 +242,7 @@ h1 {
 }
 
 .cartCount {
+
   position: absolute;
   top: -2px;
   right: 2px;
@@ -249,7 +250,7 @@ h1 {
   color: rgb(255, 255, 255);
   font-size: 12px;
   border-radius: 50%;
-  padding: 4px 4px;
+  padding: 4px 5px 4px 6px;
   transform: translate(50%, -50%);
   display: none;
 
