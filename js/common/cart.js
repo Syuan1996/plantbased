@@ -43,7 +43,7 @@ function buyClickHandler() {
         return;
     }
     cartClickHandler();
-    window.location.href = '/shopCart.html';
+    window.location.href = '../shopCart.html';
 }
 
 function initProductInsidePage() {
