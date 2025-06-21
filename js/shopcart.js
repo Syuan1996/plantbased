@@ -225,3 +225,20 @@ toggleInvoiceFields();
 
 
 // =========下半部切換資料的js -發票類型 end=========
+
+//最後的確認結帳 導回首頁start
+
+document.getElementById('ConfirmPayBtn').addEventListener('click', function (e) {
+    e.preventDefault(); // 阻止真的送出表單
+
+    //  清除購物車模擬資料
+    localStorage.removeItem('cart');
+
+    //  顯示成功訊息
+    alert('購買成功！感謝您的訂購');
+
+    //  導回首頁（記得根據實際位置調整路徑）
+    window.location.href = '../index.html';
+});
+
+//最後的確認結帳 導回首頁end

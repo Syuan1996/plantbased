@@ -582,7 +582,12 @@
         display: block;
     }
 
-
+    .emptyMessage {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        color: #939393;
+    }
 
 }
 

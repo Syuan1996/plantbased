@@ -12,10 +12,7 @@ function updateCartCount() {
 function cartClickHandler() {
     const quantityInput = document.querySelector('.nowNumber');
     const stock = parseInt(quantityInput.dataset.stock || "0");
-    if (stock <= 0) {
-        // 按鈕已禁用，直接 return 不動作
-        return;
-    }
+    if (stock <= 0) return;
 
     const productName = document.querySelector('.productInsideTopRight h2').textContent;
     const productPrice = parseInt(document.querySelector('.price .Digits').textContent);
@@ -26,14 +23,34 @@ function cartClickHandler() {
     const existingIndex = cart.findIndex(item => item.name === productName);
 
     if (existingIndex !== -1) {
-        cart[existingIndex].quantity += productQuantity;
+        const currentQty = cart[existingIndex].quantity;
+        const newQty = currentQty + productQuantity;
+
+        if (newQty > stock) {
+            alert(`超過庫存上限，最多只能購買 ${stock} 件`);
+            return;
+        }
+
+        cart[existingIndex].quantity = newQty;
     } else {
-        cart.push({ name: productName, price: productPrice, quantity: productQuantity, img: productImg, stock: stock });
+        if (productQuantity > stock) {
+            alert(`商品庫存僅剩 ${stock} 件，無法加入 ${productQuantity} 件`);
+            return;
+        }
+
+        cart.push({
+            name: productName,
+            price: productPrice,
+            quantity: productQuantity,
+            img: productImg,
+            stock: stock
+        });
     }
 
     localStorage.setItem('cart', JSON.stringify(cart));
     updateCartCount();
 }
+
 
 function buyClickHandler() {
     const quantityInput = document.querySelector('.nowNumber');
