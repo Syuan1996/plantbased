@@ -729,6 +729,15 @@
 
   .indexNewsWrap {
     margin-bottom: 30px;
+
+  }
+
+  .indexNewsItem {
+    padding: 0px 7px;
+  }
+
+  .indexNewsMore {
+    padding-right: 10px;
   }
 
   .applePattern {
@@ -765,6 +774,10 @@
     display: flex;
     flex-direction: column-reverse;
     gap: 4vw;
+  }
+
+  .indexNewsItemBottom p {
+    line-height: 1.4;
   }
 
 }
@@ -969,9 +982,8 @@
   .indexBrandMore {
 
     text-align: right;
-
-
   }
+
 }
 
 @media screen and (max-width:1000px) {
